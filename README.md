@@ -9,11 +9,10 @@
 Add your project description.
 
 ### Team Members
-
-- [Bob](https://github.com/mishakessler)
-- [Jane](https://github.com/mishakessler)
-- [John](https://github.com/mishakessler)
-- [Ericka](https://github.com/mishakessler) (Team Leader) 
+- [Christian](https://github.com/chris-m18)
+- [Johnathan](https://github.com/Johnathan238)
+- [Jacky](https://github.com/jackyclyang) 
+- [Scott](https://github.com/kcip) (Team Lead)
 
 ### Team Expectations
 >  Review and update the original Group Expectations document that you created for the Blog App Exercise and link to it here.
