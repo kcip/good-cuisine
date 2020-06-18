@@ -436,6 +436,383 @@
     "serving": "4",
     "keyword": ["Japanese", "Dinner"],
     "saved": false
+  },
+  {
+    "name": "Chicken pasta ",
+    "imgURL": "",
+    "videoURL": "https://www.youtube.com/embed/VDnluYI0yZs",
+    "ingredients": [
+      "12 oz. spaghetti",
+      "1 tbsp. extra-virgin olive oil",
+      "1 lb. boneless, skinless chicken breasts, cut into 1-inch pieces",
+      "Kosher salt",
+      "Freshly ground black pepper",
+      "1 large onion, sliced into half moons",
+      "2 bell peppers, sliced",
+      "1 tbsp. chili powder",
+      "1 tbsp. ground cumin",
+      "2 tsp. dried oregano",
+      "1 (15-oz.) can fire-roasted diced tomatoes",
+      "1/2 c. low-sodium chicken broth",
+      "3/4 c. half-and-half",
+      "1/2 c. shredded cheddar",
+      "1/2 c. shredded pepper jack",
+      "Freshly chopped cilantro, for garnish"
+    ],
+    "equipment": [
+      "Large pot",
+      "Large Skillet",
+      "Big spoon",
+      "Plates for serving",
+    ],
+    "instructions": [
+      "In a large pot of salted boiling water, cook spaghetti according to package directions until al dente. Drain.",
+      "Meanwhile, in a large skillet over medium-high heat, heat oil. Add chicken and season with salt and pepper. Cook, stirring occasionally, until golden, about 6 minutes, then add onion and bell peppers and cook, stirring, until soft, 5 to 7 minutes more. Add spices and stir until coated.",
+      "Stir in tomatoes, broth, and half-and- half and simmer until slightly reduced, about 3 minutes. Add cooked spaghetti and toss until coated, then remove from heat, add cheeses, and stir until melty and creamy. Season with salt and pepper.",
+      "Garnish with cilantro before serving."
+    ],
+    "cuisine": "Mexican",
+    "cooktime": "40",
+    "difficulty": "Medium",
+    "diet": [],
+    "cookingMethod": [
+      "Fry",
+      "Boil"
+    ],
+    "course": "Dinner",
+    "serving": "4",
+    "keyword": [
+      "chicken",
+      "pasta",
+      "vegetable"
+    ],
+    "saved": false
+  },
+  {
+    "name": "Street Corn",
+    "imgURL": "",
+    "videoURL": "https://www.youtube.com/embed/NbhP8GOG_Is",
+    "ingredients": [
+      "1/4 c. finely chopped walnuts, plus more for serving",
+      "Canola or vegetable oil, for brushing",
+      "4 ears corn, shucked and cleaned",
+      "1/4 c. mayonnaise",
+      "1/4 c. sour cream",
+      "1/4 c. grated cotija cheese (or Parmesan)",
+      "Chili powder, for serving",
+      "1 lime, cut into wedges",
+      "Cilantro, for serving, if desired"
+    ],
+    "equipment": [
+      "Small baking pan",
+      "Grill pan",
+      "2 Small bowl"
+
+    ],
+    "instructions": [
+      "Heat oven to 350°. Scatter walnuts on small baking pan. Toast until lightly golden, about 8 minutes. Set aside.",
+      "Preheat a grill or grill pan over medium-high heat and oil grates. Brush corn with oil and grill, turning occasionally until kernels are bright yellow and charred in places, about 10 minutes.",
+      "In a small bowl, combine mayonnaise and sour cream. In another small bowl, combine walnuts and cotija cheese.",
+      "Brush cooked corn with mayonnaise mixture, then sprinkle with walnut mixture and a generous amount of chili powder. Squeeze one lime wedge over the corn and sprinkle with cilantro and more walnuts. Serve with lime wedges.",
+    ],
+    "cuisine": "Mexican",
+    "cooktime": "20",
+    "difficulty": "Easy",
+    "diet": [
+      "vegetarian"
+    ],
+    "cookingMethod": [
+      "Grilled"
+    ],
+    "course": "Appetizer",
+    "serving": "4",
+    "keyword": [
+      "corn"
+    ],
+    "saved": false
+  },
+  {
+    "name": " Huevos Rancheros",
+    "imgURL": "",
+    "videoURL": "https://www.youtube.com/embed/LkbTMD7fDY4",
+    "ingredients": [
+      "FOR THE HUEVOS RANCHEROS:",
+      "1 tbsp. extra-virgin olive oil",
+      "1 onion, chopped",
+      "1 tsp. cumin",
+      "1 tsp. chili powder",
+      "kosher salt",
+      "1 c. black beans, drained and rinsed",
+      "1 c. salsa",
+      "1 c. Shredded Monterey Jack",
+      "4 large eggs",
+      "FOR SERVING:",
+      "4 corn tostadas",
+      "1 avocado, sliced",
+      "1 tbsp. freshly chopped cilantro",
+      "Hot sauce",
+      "sour cream"
+
+    ],
+    "equipment": [
+      "Large Pan",
+      "Wooden Spoon",
+      "Large plate"
+    ],
+    "instructions": [
+      "Preheat oven to 400º.",
+      "In a large skillet over medium heat, heat oil. Add onions and cook until soft, 5 minutes. Season with cumin, chili powder, and salt.",
+      "Add black beans and salsa to skillet and stir to combine.",
+      "Sprinkle all over with cheese, then create four wells with a spoon and crack in eggs. Season with salt.",
+      "Bake until egg whites are set and yolks still runny, 8 to 10 minutes.",
+      "Plate on top of tostada. Garnish with avocado and cilantro, then drizzle with hot sauce and sour cream."
+    ],
+    "cuisine": "Mexican",
+    "cooktime": "20",
+    "difficulty": "Medium",
+    "diet": [
+      "Vegertaian"
+    ],
+    "cookingMethod": [
+      "fry"
+    ],
+    "course": "Breakfast",
+    "serving": "4",
+    "keyword": [
+      "eggs",
+      "avocado",
+      "sour cream"
+    ],
+    "saved": false
+  },
+  {
+    "name": "Quesadilla",
+    "imgURL": "",
+    "videoURL": "https://www.youtube.com/embed/6R0-o_v6Gio",
+    "ingredients": [
+      "1 tbsp. vegetable oil",
+      "1 Onion, finely chopped",
+      "1 lb. ground beef",
+      "1/2 tsp. ground chili powder",
+      "1/2 tsp. ground paprika",
+      "1/2 tsp. ground cumin",
+      "8 medium flour tortillas",
+      "1 1/2 c. Monterey Jack, shredded",
+      "1 avocado, sliced",
+      "2 tbsp. Chopped cilantro"
+    ],
+    "equipment": [
+      "Large Pan",
+      "Wooden Spoon",
+      "Large plate"
+    ],
+    "instructions": [
+      "Heat vegetable oil in a large pan over medium heat. Sauté onions until soft. Add ground beef and spices, breaking up the meat with a wooden spoon. Stir occasionally and sauté until the meat cooked through. Remove pan from heat and drain excess fat. Season mixture with salt and pepper to taste. Clean pan and return over medium heat.",
+      "Meanwhile, assembly quesadillas. Sprinkle cheese onto 4 flour tortillas. Top with beef mixture, avocado and cilantro. Top each tortilla with a second tortilla.",
+      "Working one at a time, transfer quesadillas to the heated pan. Cook until golden-brown, about 3 minutes. When ready to flip, cover the pan with a large plate. Invert pan to transfer the quesadilla onto the plate, then slide the quesadilla back onto the pan (golden side up). Cook until golden-brown. Slice into triangles and serve warm."
+    ],
+    "cuisine": "Mexican",
+    "cooktime": "30",
+    "difficulty": "Medium",
+    "diet": [
+      "Meat"
+    ],
+    "cookingMethod": [
+      "fry"
+    ],
+    "course": "Dinner",
+    "serving": "4",
+    "keyword": [
+      "beef",
+      "cheese",
+      "avocado",
+      "tortillas"
+    ],
+    "saved": false
+  },
+  {
+    "name": " Steak Fajita Power Bowls",
+    "imgURL": "",
+    "videoURL": "https://www.youtube.com/embed/t4nO2SKf508",
+    "ingredients": [
+      "2 tbsp. vegetable oil, divided",
+      "1/2 yellow onion, sliced into half moons",
+      "2 bell peppers, thinly sliced",
+      "kosher salt",
+      "Freshly ground black pepper",
+      "1 lb. skirt steak, cut into 1/2 slices",
+      "Juice of 1/2 lime",
+      "1/2 tsp. cumin",
+      "1/2 tsp. chili powder",
+      "4 c. cooked brown rice",
+      "1 c. black beans, drained and rinsed",
+      "1 c. frozen corn, warmed",
+      "1 avocado, thinly sliced",
+      "1 tbsp. finely chopped cilantro, for garnish",
+      "Sour cream, for serving",
+    ],
+    "equipment": [
+      "Large skillet",
+      "Fork",
+      "Bowls"
+    ],
+    "instructions": [
+      "In a large skillet over medium heat, heat 1 tbsp vegetable oil. Add the onions and peppers, and season with salt and pepper to taste. Cook until onions are translucent and peppers are tender, 7 to 10 minutes. Remove from skillet and reserve.",
+      "Add remaining vegetable oil and let heat for about 30 seconds, then add skirt steak to pan. Squeeze lime over steak and season with cumin, chili powder, salt and pepper. Let them sit for a minute or so to get a nice sear, then cook to your preference, about another 5 minutes for medium well done steak. Remove from skillet.",
+      "Build bowls: start with about 1 cup rice per bowl. Top with steak, onions and peppers, avocado, black beans and corn.",
+      "Garnish with cilantro and drizzle with sour cream. Serve."
+    ],
+    "cuisine": "Mexican",
+    "cooktime": "45",
+    "difficulty": "Medium",
+    "diet": [
+      "Meat"
+    ],
+    "cookingMethod": [
+      "Fry"
+    ],
+    "course": "Dinner",
+    "serving": "4",
+    "keyword": [
+      "steak",
+      "pepers",
+      "sour cream"
+    ],
+    "saved": false
+  },
+  {
+    "name": "Tacos Al PAstor ",
+    "imgURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190130-tacos-al-pastor-horizontal-1-1549571422.png?crop=0.668xw:1.00xh;0.175xw,0&resize=768:*    ",
+    "videoURL": "",
+    "ingredients": [
+      "FOR ACHIOTE PASTE",
+      "1/4 c. extra-virgin olive oil",
+      "1/4 c. annatto seeds",
+      "1 tbsp. coriander seeds",
+      "1 tbsp. cumin seeds",
+      "2 tsp. dried oregano",
+      "1 tsp. black peppercorns",
+      "1 tsp. mustard seeds",
+      "5 allspice berries",
+      "4 cloves garlic",
+      "1/3 c. orange juice",
+      "2 tbsp. apple cider vinegar",
+      "1 tsp. kosher salt",
+      "FOR THE PORK",
+      "1 tbsp. extra-virgin olive oil, plus more for grill",
+      "3 dried guaillo chilis, seeds removed",
+      "3 dried chiles de arbol, seeds removed",
+      "1/3 c. pineapple juice",
+      "1/4 c. achiote paste",
+      "2 tbsp. apple cider vinegar",
+      "3 cloves garlic",
+      "2 tbsp. packed brown sugar",
+      "2 tsp. kosher salt",
+      "1 tsp. ground cinnamon",
+      "1/2 tsp. freshly ground black pepper",
+      "2 lb. boneless pork shoulder, sliced 1/2 thick",
+      "FOR SERVING",
+      "1 pineapple, cored and cut into rings",
+      "1 red onion, cut into rings",
+      "12 corn tortillas",
+      "Freshly chopped cilantro"
+
+    ],
+    "equipment": [
+      "Small skillet",
+      "Food processor or blender",
+      "Large Bowl",
+      "Cutting Board"
+
+    ],
+    "instructions": [
+      "MAKE ACHIOTE PASTE",
+      "In a small skillet over medium heat, heat oil. Add annatto seeds, coriander, cumin, oregano, peppercorns, mustard seeds, and allspice berries and toast until fragrant, 1 minute. In a food processor or blender, add toasted seeds, garlic, orange juice, vinegar, and salt. Blend until it turns into a mostly smooth paste, scraping down sides as needed.",
+
+      "MAKE TACOS",
+      "In a small skillet over medium heat, heat oil. Add chilis and toast until slightly charred and fragrant, 1 minute. In a food processor or blender, add toasted chilis, pineapple juice, achiote paste, vinegar, garlic, brown sugar, salt, cinnamon, and pepper. Blend until fully combined.",
+      "Place pork in a large bowl and pour marinade over. Cover and refrigerate for 4 hours and up to overnight.",
+      "Preheat grill to medium-high and brush with oil. Grill pork until slightly charred and cooked through, 6 minutes per side. Let rest on a cutting board for 5 minutes then cut into 1/' pieces.",
+      "Add pineapple and onions to grill and cook until slightly charred and onion is softened, 3 minutes per side. Break pineapple rings into large pieces.",
+      "Add tortillas to grill and cook until warmed, 1 minute per side.",
+      "On warmed tortillas, add pork, pineapple, onions, and cilantro. Serve with lime wedges."
+    ],
+    "cuisine": "Mexican",
+    "cooktime": "5H",
+    "difficulty": "Hard",
+    "diet": [
+      "Carbs"
+    ],
+    "cookingMethod": [
+      "grill"
+    ],
+    "course": "Dinner",
+    "serving": "10",
+    "keyword": [
+      "tacos",
+      "pineapple",
+      "tortilla"
+    ],
+    "saved": false
+  },
+  {
+    "name": "Mexican Vegetarian Enchiladas",
+    "imgURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/vegetarian-enchiladas-horizontal-1539718618.jpg?crop=0.804xw:0.679xh;0.112xw,0.117xh&resize=768:*",
+    "videoURL": "",
+    "ingredients": [
+      "1 tbsp. extra-virgin olive oil",
+      "1/2 medium onion, chopped",
+      "2 cloves garlic, minced",
+      "2 c. frozen corn, rinsed and drained",
+      "3 small zucchinis, chopped",
+      "Kosher salt",
+      "1 tsp. chili powder",
+      "1 tsp. cumin",
+      "1 (15-oz.) black beans, drained and rinsed",
+      "1 (10-oz.) can enchilada sauce",
+      "Juice of 1/2 lime",
+      "8 flour tortillas",
+      "2/3 c. shredded Monterey jack",
+      "1/3 c. shredded cheddar",
+
+      "FOR TOPPING",
+      "1 c. quartered grape tomatoes",
+      "1 avocado, sliced",
+      "1/4 c. finely chopped onion",
+      "1/4 c. fresh cilantro leaves",
+
+    ],
+    "equipment": [
+      "Pan",
+      "Large Spoon",
+      "9-x-13" / 'baking dish',
+
+    ],
+    "instructions": [
+      "Preheat oven to 350°. In a large skillet over medium heat, heat oil. Add onion and cook until soft, 6 minutes.",
+      "Stir in garlic and cook until fragrant, 1 minute more. Add corn and zucchinis and season with salt, chili powder, and cumin. Cook, stirring occasionally, until corn is turning golden and zucchini is tender. Add black beans, a 1/4 cup of enchilada sauce, and lime juice. Cook 2 minutes more.",
+      "Add a large scoop of vegetable mixture onto each tortilla and roll up. Place rolled up tortillas side by side in a 9-x-13 baking dish and top with cheeses.",
+      "Bake until cheese is melty, 15 to 18 minutes.",
+      "Garnish with tomatoes, avocado, onion, and cilantro."
+    ],
+    "cuisine": "Mexcian",
+    "cooktime": "50",
+    "difficulty": "Medium",
+    "diet": [
+      "Vegetarian"
+    ],
+    "cookingMethod": [
+      "heat",
+      "bake"
+    ],
+    "course": "Diet",
+    "serving": "4",
+    "keyword": [
+      "avocado",
+      "cilantro",
+      "healthy"
+    ],
+    "saved": false
   }
 
 ]
