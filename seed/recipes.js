@@ -438,6 +438,224 @@
     "saved": false
   },
   {
+
+    "name": "Rigatoni with Easy Vodka Sauce",
+    "imgURL": "https://assets.bonappetit.com/photos/5a8da4996497380283798c16/3:2/w_2560,c_limit/rigatoni-with-vodka-sauce.jpg",
+    "videoURL": "https://www.youtube.com/embed/DrzWGUGN6vY",
+    "ingredients": [
+      "Kosher salt",
+      "1 medium onion",
+      "4 garlic cloves",
+      "4 oz. Parmesan cheese",
+      "2 Tbsp. extra-virgin olive oil, plus more for drizzling",
+      "1 4.5-oz. tube double-concentrated tomato paste",
+      "½ tsp. crushed red pepper flakes",
+      "2 oz. vodka",
+      "¾ cup heavy cream",
+      "1 lb. rigatoni",
+      "Basil leaves (for serving)"
+    ],
+    "equipment": ["Dutch Oven", "Large Pot", ""],
+    "instructions": [
+      "Fill a stock pot or other large pot three-quarters full with water and heat over high. Toss in a handful of salt and bring to a boil while you do your other prep.",
+      "Peel and finely chop 1 onion",
+      "Firmly smash 4 garlic cloves with the flat side of a chef’s knife and remove peel.",
+      "Grate 4 oz. Parmesan on the smallest holes of the box grater.",
+      "Heat 2 Tbsp. oil in a Dutch oven over medium (position it next to pot of water). Add onion and garlic and cook, stirring constantly, just until onion is starting to brown around the edges, 5–7 minutes.",
+      "Add entire 4.5-oz. tube tomato paste and ½ tsp. red pepper flakes and stir until paste evenly coats onion. Continue to cook, stirring often, until paste is deep red and starting to brown on bottom of pot, 5–7 minutes.",
+      "Add 2 oz. vodka to deglaze pan and stir to incorporate, scraping bottom of pot. Reduce heat to low.",
+      "Using a heatproof glass measuring cup, scoop about ¼ cup boiling water from pot, then add ¾ cup heavy cream to measuring cup (this brings up the temperature of the cream so it won’t break when you add it to the pot).",
+      "Slowly add warmed cream to Dutch oven, stirring constantly, until a smooth sauce forms. Remove from heat.",
+      "Add 1 lb. rigatoni to pot of boiling salted water and cook according to package instructions until al dente. About 1 minute before the timer goes off, use heatproof measuring cup to scoop up about 1 cup pasta cooking liquid. Heat Dutch oven over low.",
+      "Using a spider, transfer rigatoni to Dutch oven along with any water that’s piggybacking on the pasta.",
+      "Add ½ cup pasta cooking liquid to Dutch oven and stir to incorporate, then gradually add half of Parmesan, stirring constantly to melt cheese. You should have a smooth, glossy sauce that coats each piece of pasta. Season with salt and add a splash more pasta cooking liquid to thin sauce, if needed.",
+      "Divide pasta among bowls. Top with remaining cheese, dividing evenly. Drizzle with more oil, then tear basil leaves over."
+    ],
+    "cuisine": "Italian",
+    "cooktime": "30",
+    "difficulty": "Easy",
+    "diet": ["vegetarian"],
+    "cookingMethod": ["boiling"],
+    "course": "Dinner",
+    "serving": "4",
+    "keyword": ["Italian", "Dinner"],
+    "saved": false
+
+  },
+  {
+    "name": "Chicken Parmigiana",
+    "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTDA-2AYdRTr4GNnBrb2wT1bW1pPBgd9RGs9pdQLw7wFipvhiST&usqp=CAU",
+    "videoURL": "https://www.youtube.com/embed/gwSOwAe_IVY",
+    "equipment": ["Dutch Oven", "Large Pot", ""],
+    "ingredients": [
+      " 4 boneless, skinless chicken breasts, pounded thin",
+      "Salt and freshly ground black pepper",
+      "2 cups all-purpose flour, seasoned with salt and pepper",
+      "4 large eggs, beaten with 2 tablespoons water and seasoned with salt and pepper",
+      "2 cups panko bread crumbs",
+      "1 cup vegetable oil or pure olive oil",
+      '1 pound fresh mozzarella, thinly sliced',
+      '1/4 cup freshly grated Parmesan',
+      "Fresh basil or parsley leaves, for garnish",
+      "Tomato Sauce:",
+      "2 tablespoons olive oil",
+      "1 large Spanish onion, finely chopped",
+      "4 cloves garlic, smashed with some kosher salt to make a paste",
+      "Two 28-ounce cans plum tomatoes and their juices, pureed in a blender",
+      "One 16-ounce can crushed tomatoes",
+      "1 small can tomato paste",
+      "1 bay leaf",
+      "1 small bunch Italian parsley",
+      "1 Cubano chile pepper, chopped",
+      "Salt and freshly ground pepper",
+
+    ],
+    "instructions": [
+      " Preheat oven to 400 degrees F.",
+      "Season chicken on both sides with salt and pepper. Dredge each breast in the flour and tap off excess, then dip in the egg and let excess drip off, then dredge on both sides in the bread crumbs.",
+      "Divide the oil between 2 large saute pans and heat over high heat until almost smoking. Add 2 chicken breasts to each pan and cook until golden brown on both sides, about 2 minutes per side. Transfer to a baking sheet and top each breast with some Tomato Sauce, a few slices of the mozzarella, salt and pepper, and a tablespoon of Parmesan. Bake in the oven until the chicken is cooked through and the cheese is melted, about 5 to 7 minutes. Remove from the oven and garnish with basil or parsley leaves.",
+      "Tomato Sauce:",
+      "Heat olive oil in a medium saucepan over medium heat. Add onions and garlic and cook until soft. Add pureed tomatoes with their juices, crushed tomatoes, tomato paste, 1 cup water, bay leaf, parsley, Cubano pepper, and bring to a boil. Season, to taste, with salt and pepper. Reduce heat and cook until slightly thickened, about 30 minutes."
+
+    ],
+    "cuisine": "Italian",
+    "cooktime": "75",
+    "difficulty": "Intermediate",
+    "diet": ["keto"],
+    "cookingMethod": ["baking, frying"],
+    "course": "Dinner",
+    "serving": "4",
+    "keyword": ["Italian", "Dinner"],
+    "saved": false
+
+
+  },
+  {
+    "name": "Real Meatballs and Spaghetti",
+    "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTc0x40-X6WxAqmTD9QHNKgm3HJaXVVCvmPd_t9awMgr1COzz3d&usqp=CAU",
+    "videoURL": "https://www.youtube.com/embed/tcvz0BUhJO4",
+    "equipment": "Large skillet",
+    "ingredients": [
+      " 1/2 pound ground veal",
+      "1/2 pound ground pork",
+      "1 pound ground beef",
+      "1 cup fresh white bread crumbs (4 slices, crusts removed)",
+      "1/4 cup seasoned dry bread crumbs",
+      "2 tablespoons chopped fresh flat-leaf parsley",
+      "1/2 cup freshly grated Parmesan cheese",
+      " 2 teaspoons kosher salt",
+      "1 / 2 teaspoon freshly ground black pepper",
+      "1 / 4 teaspoon ground nutmeg",
+      "1 extra - large egg, beaten",
+      "Vegetable oil",
+      "Olive oil",
+      "For the sauce:",
+      "      1 tablespoon good olive oil",
+      "1 cup chopped yellow onion(1 onion)",
+      "1 1 / 2 teaspoons minced garlic",
+      "1 / 2 cup good red wine, such as Chianti",
+      "1(28 - ounce) can crushed tomatoes, or plum tomatoes in puree, chopped",
+      "1 tablespoon chopped fresh flat - leaf parsley",
+      "1 1 / 2 teaspoons kosher salt",
+      "1 / 2 teaspoon freshly ground black pepper"
+    ],
+    "instructions": [
+      "Place the ground meats, both bread crumbs, parsley, Parmesan, salt, pepper, nutmeg, egg, and 3/4 cup warm water in a bowl. Combine very lightly with a fork. Using your hands, lightly form the mixture into 2-inch meatballs. You will have 14 to 16 meatballs.",
+      "Pour equal amounts of vegetable oil and olive oil into a large (12-inch) skillet to a depth of 1/4-inch. Heat the oil. Very carefully, in batches, place the meatballs in the oil and brown them well on all sides over medium-low heat, turning carefully with a spatula or a fork. This should take about 10 minutes for each batch. Don't crowd the meatballs. Remove the meatballs to a plate covered with paper towels. Discard the oil but don't clean the pan.",
+      "For the sauce, heat the olive oil in the same pan. Add the onion and saute over medium heat until translucent, 5 to 10 minutes. Add the garlic and cook for 1 more minute. Add the wine and cook on high heat, scraping up all the brown bits in the pan, until almost all the liquid evaporates, about 3 minutes. Stir in the tomatoes, parsley, salt, and pepper.",
+      "Return the meatballs to the sauce, cover, and simmer on the lowest heat for 25 to 30 minutes, until the meatballs are cooked through. Serve hot on cooked spaghetti and pass the grated Parmesan"
+    ],
+    "cuisine": "Italian",
+    "cooktime": "120",
+    "difficulty": "Intermediate",
+    "diet": ["keto"],
+    "cookingMethod": ["cooking"],
+    "course": "Dinner",
+    "serving": "6",
+    "keyword": ["Italian", "Dinner"],
+    "saved": false
+  },
+  {
+    "name": "Osso Buco",
+    "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQERLCAZ_ko741aPMPT1n7dxyB8s-KA-ZJggvPYPVRIMpKkxbmN&usqp=CAU",
+    "videoURL": "https://www.youtube.com/embed/Jr9Is6NsFck",
+    "equipment": "Large skillet,cheeseclot, large Dutch oven pot",
+    "ingredients": [
+      "1 sprig fresh rosemary",
+      "1 sprig fresh thyme",
+      "1 dry bay leaf",
+      "2 whole cloves",
+      "Cheesecloth",
+      "Kitchen twine, for bouquet garni and tying the veal shanks",
+      "3 whole veal shanks (about 1 pound per shank), trimmed",
+      "Sea salt and freshly ground black pepper",
+      "All purpose flour, for dredging",
+      "1/2 cup vegetable oil",
+      "1 small onion, diced into 1/2-inch cubes",
+      "1 small carrot, diced into 1/2-inch cubes",
+      "1 stalk celery, diced into 1/2 inch cubes",
+      "1 tablespoon tomato paste",
+      "1 cup dry white wine",
+      "3 cups chicken stock",
+      "3 tablespoons fresh flat-leaf Italian parsley, chopped",
+      "1 tablespoon lemon zest"
+    ],
+    "instructions": [
+      "Place the rosemary, thyme, bay leaf and cloves into cheesecloth and secure with twine. This will be your bouquet garni.",
+      "For the veal shanks, pat dry with paper towels to remove any excess moisture. Veal shanks will brown better when they are dry. Secure the meat to the bone with the kitchen twine. Season each shank with salt and freshly ground pepper. Dredge the shanks in flour, shaking off excess.",
+      "In a large Dutch oven pot, heat vegetable oil until smoking. Add tied veal shanks to the hot pan and brown all sides, about 3 minutes per side. Remove browned shanks and reserve.",
+      "In the same pot, add the onion, carrot and celery. Season with salt at this point to help draw out the moisture from the vegetables. Saute until soft and translucent, about 8 minutes. Add the tomato paste and mix well. Return browned shanks to the pan and add the white wine and reduce liquid by half, about 5 minutes. Add the bouquet garni and 2 cups of the chicken stock and bring to a boil. Reduce heat to low, cover pan and simmer for about 1 1/2 hours or until the meat is falling off the bone. Check every 15 minutes, turning shanks and adding more chicken stock as necessary. The level of cooking liquid should always be about 3/4 the way up the shank.",
+      "Carefully remove the cooked shanks from the pot and place in decorative serving platter. Cut off the kitchen twine and discard.",
+      "Pour all the juices and sauce from the pot over the shanks. Garnish with chopped parsley and lemon zest."
+
+    ],
+    "cuisine": "Italian",
+    "cooktime": "135",
+    "difficulty": "Easy",
+    "diet": ["keto"],
+    "cookingMethod": ["cooking"],
+    "course": "Dinner",
+    "serving": "6",
+    "keyword": ["Italian", "Dinner"],
+    "saved": false
+
+  },
+  {
+    "name": "Italian Baked Eggs & Sausage",
+    "imgURL": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Italian-Baked-Eggs-Sausage_EXPS_THFM17_63535_B09_27_2b.jpg",
+    "videoURL": "",
+    "equipment": "Large skillet,large Dutch oven pot",
+    "ingredients": [
+      "1 pound bulk Italian sausage",
+      "1 jar (24 ounces) fire-roasted tomato and garlic pasta sauce",
+      "1 can (14-1/2 ounces) fire-roasted diced tomatoes, drained",
+      "3/4 cup part-skim ricotta cheese",
+      "8 large eggs",
+      "1/4 teaspoon salt",
+      "1/4 teaspoon pepper",
+      "1/4 cup shredded Parmesan cheese",
+      "1 tablespoon minced fresh basil",
+      "1 French bread demi-baguette (4 ounces), cut into 1-inch slices",
+      "1/4 cup butter, softened"
+
+    ],
+    "instructions": [
+      "    Preheat oven to 350°. In a large skillet over medium heat, cook sausage, crumbling meat, until no longer pink, 3-4 minutes; drain. Stir in pasta sauce and tomatoes. Transfer to a 13x9-in. baking dish.",
+      "Dollop ricotta cheese on top of meat mixture. Gently break an egg into a small bowl; slip egg onto ricotta. Repeat with remaining eggs. Sprinkle with salt, pepper and Parmesan cheese.",
+      "Bake until egg whites are completely set and yolks have begun to thicken but are not hard, 30-35 minutes. Remove from oven; sprinkle with basil.",
+      "Meanwhile, spread bread slices with butter; place on an ungreased baking sheet. Preheat broiler. Broil 3-4 in. from heat until golden brown, 1-2 minutes on each side. Serve immediately with baked eggs."
+    ],
+    "cuisine": "Italian",
+    "cooktime": "30",
+    "difficulty": "Easy",
+    "diet": ["keto"],
+    "cookingMethod": ["baking"],
+    "course": "Dinner",
+    "serving": "8",
+    "keyword": ["Italian", "Dinner"],
+    "saved": false
+  },
+  {
     "name": "Chicken pasta ",
     "imgURL": "",
     "videoURL": "https://www.youtube.com/embed/VDnluYI0yZs",
@@ -813,6 +1031,8 @@
       "healthy"
     ],
     "saved": false
+
   }
 
 ]
+
