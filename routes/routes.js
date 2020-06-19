@@ -3,6 +3,8 @@ const controllers = require('../controllers/recipes')
 
 const router = Router()
 
+router.get('/', (req, res) => res.send('hello'))
+
 router.get('/recipes', controllers.getRecipes)
 router.get('/recipes/:id', controllers.getRecipe)
 router.post('/recipes', controllers.createRecipe)

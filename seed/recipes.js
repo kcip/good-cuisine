@@ -287,33 +287,21 @@ const main = async () => {
         "imgURL": "https://hips.hearstapps.com/del.h-cdn.co/assets/cm/15/11/480x576/54f8a18de1d9b_-_miso-glazed-salmon-s3.jpg?resize=768:*",
         "videoURL": "",
         "ingredients": [
-          {
-            "recipe": "edamame salad",
-            "ingrediants":
-              [
-                "1 bag frozen shelled edamame or frozen baby lima beans",
-                "1/4 c. seasoned rice vinegar",
-                "1 tbsp. vegetable oil",
-                "1 tsp. sugar",
-                "3/4 tsp. salt",
-                "tsp. ground black pepper",
-                "1 bunch radishes",
-                "1 c. loosely packed fresh cilantro leaves"
-              ]
-          },
-          {
-            "recipe": "MISO-GLAZED SALMON",
-            "ingrediants":
-              [
-                "2 tbsp. red miso",
-                "1 green onion",
-                "1 tbsp. grated, peeled fresh ginger",
-                "1 tsp. brown sugar",
-                "tsp. ground red pepper",
-                "1 salmon fillet with skin",
-                "baby greens"
-              ]
-          }
+          "1 bag frozen shelled edamame or frozen baby lima beans",
+          "1/4 c. seasoned rice vinegar",
+          "1 tbsp. vegetable oil",
+          "1 tsp. sugar",
+          "3/4 tsp. salt",
+          "tsp. ground black pepper",
+          "1 bunch radishes",
+          "1 c. loosely packed fresh cilantro leaves",
+          "2 tbsp. red miso",
+          "1 green onion",
+          "1 tbsp. grated, peeled fresh ginger",
+          "1 tsp. brown sugar",
+          "tsp. ground red pepper",
+          "1 salmon fillet with skin",
+          "baby greens"
         ],
         "equipment": ["small bowl", "frying pan"],
         "instructions":
@@ -412,7 +400,7 @@ const main = async () => {
 
       {
         "name": "Tonkatsu pork",
-        "imgURL": "",
+        "imgURL": "https://images.lifesambrosia.com/food/large/tonkatsu-pork.jpg",
         "videoURL": "",
         "ingredients":
           [
@@ -463,7 +451,7 @@ const main = async () => {
           "1 lb. rigatoni",
           "Basil leaves (for serving)"
         ],
-        "equipment": ["Dutch Oven", "Large Pot", ""],
+        "equipment": ["Dutch Oven", "Large Pot"],
         "instructions": [
           "Fill a stock pot or other large pot three-quarters full with water and heat over high. Toss in a handful of salt and bring to a boil while you do your other prep.",
           "Peel and finely chop 1 onion",
@@ -494,7 +482,7 @@ const main = async () => {
         "name": "Chicken Parmigiana",
         "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTDA-2AYdRTr4GNnBrb2wT1bW1pPBgd9RGs9pdQLw7wFipvhiST&usqp=CAU",
         "videoURL": "https://www.youtube.com/embed/gwSOwAe_IVY",
-        "equipment": ["Dutch Oven", "Large Pot", ""],
+        "equipment": ["Dutch Oven", "Large Pot"],
         "ingredients": [
           " 4 boneless, skinless chicken breasts, pounded thin",
           "Salt and freshly ground black pepper",
@@ -542,7 +530,7 @@ const main = async () => {
         "name": "Real Meatballs and Spaghetti",
         "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTc0x40-X6WxAqmTD9QHNKgm3HJaXVVCvmPd_t9awMgr1COzz3d&usqp=CAU",
         "videoURL": "https://www.youtube.com/embed/tcvz0BUhJO4",
-        "equipment": "Large skillet",
+        "equipment": ["Large skillet"],
         "ingredients": [
           " 1/2 pound ground veal",
           "1/2 pound ground pork",
@@ -587,7 +575,7 @@ const main = async () => {
         "name": "Osso Buco",
         "imgURL": "https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQERLCAZ_ko741aPMPT1n7dxyB8s-KA-ZJggvPYPVRIMpKkxbmN&usqp=CAU",
         "videoURL": "https://www.youtube.com/embed/Jr9Is6NsFck",
-        "equipment": "Large skillet,cheeseclot, large Dutch oven pot",
+        "equipment": ["Large skillet,cheeseclot", "large Dutch oven pot"],
         "ingredients": [
           "1 sprig fresh rosemary",
           "1 sprig fresh thyme",
@@ -632,7 +620,7 @@ const main = async () => {
         "name": "Italian Baked Eggs & Sausage",
         "imgURL": "https://www.tasteofhome.com/wp-content/uploads/2018/01/Italian-Baked-Eggs-Sausage_EXPS_THFM17_63535_B09_27_2b.jpg",
         "videoURL": "",
-        "equipment": "Large skillet,large Dutch oven pot",
+        "equipment": ["Large skillet", "large Dutch oven pot"],
         "ingredients": [
           "1 pound bulk Italian sausage",
           "1 jar (24 ounces) fire-roasted tomato and garlic pasta sauce",
@@ -665,7 +653,7 @@ const main = async () => {
       },
       {
         "name": "Chicken pasta ",
-        "imgURL": "",
+        "imgURL": "https://thehealthyfoodie.com/wp-content/uploads/2017/04/One-Pot-Creamy-Chicken-Pasta-9.jpg",
         "videoURL": "https://www.youtube.com/embed/VDnluYI0yZs",
         "ingredients": [
           "12 oz. spaghetti",
@@ -716,7 +704,7 @@ const main = async () => {
       },
       {
         "name": "Street Corn",
-        "imgURL": "",
+        "imgURL": "https://www.simplyrecipes.com/wp-content/uploads/2016/07/2016-07-29-Street-Corn-14.jpg",
         "videoURL": "https://www.youtube.com/embed/NbhP8GOG_Is",
         "ingredients": [
           "1/4 c. finely chopped walnuts, plus more for serving",
@@ -759,7 +747,7 @@ const main = async () => {
       },
       {
         "name": " Huevos Rancheros",
-        "imgURL": "",
+        "imgURL": "https://d3cizcpymoenau.cloudfront.net/images/21443/SFS_Huevos_Rancheros-12.jpg",
         "videoURL": "https://www.youtube.com/embed/LkbTMD7fDY4",
         "ingredients": [
           "FOR THE HUEVOS RANCHEROS:",
@@ -813,7 +801,7 @@ const main = async () => {
       },
       {
         "name": "Quesadilla",
-        "imgURL": "",
+        "imgURL": "https://www.seriouseats.com/recipes/assets_c/2017/01/20170131-quesadillas-three-variations-7-thumb-1500xauto-436176.jpg",
         "videoURL": "https://www.youtube.com/embed/6R0-o_v6Gio",
         "ingredients": [
           "1 tbsp. vegetable oil",
@@ -858,7 +846,7 @@ const main = async () => {
       },
       {
         "name": " Steak Fajita Power Bowls",
-        "imgURL": "",
+        "imgURL": "https://del.h-cdn.co/assets/18/01/1600x800/landscape-1515192854-delish-steak-fajita-power-bowls-still001.jpg",
         "videoURL": "https://www.youtube.com/embed/t4nO2SKf508",
         "ingredients": [
           "2 tbsp. vegetable oil, divided",
@@ -1043,5 +1031,12 @@ const main = async () => {
       }
 
     ]
-
+  await Recipe.insertMany(recipes)
+  console.log("Created recipes!")
 }
+
+const run = async () => {
+  await main()
+  db.close()
+}
+run()
