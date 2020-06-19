@@ -1,0 +1,32 @@
+{
+  "name": "good-cuisine",
+  "version": "1.0.0",
+  "description": "> The Project Planning section **should be completed** before you complete this project to ensure your team is aligned as you kick off. We recommend that you use Trello or Github Projects to create a project plan and assign tasks to each member of the team.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kcip/good-cuisine.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kcip/good-cuisine/issues"
+  },
+  "homepage": "https://github.com/kcip/good-cuisine#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "mongoose": "^5.9.19",
+    "morgan": "^1.10.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.4"
+  }
+}

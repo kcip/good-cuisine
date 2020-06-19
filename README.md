@@ -1,3 +1,4 @@
+# Food Recipe App
 # PROJECT 3 PLANNING WORKSHEET README TEMPLATE <!-- omit in toc -->
 
 > The Project Planning section **should be completed** before you complete this project to ensure your team is aligned as you kick off. We recommend that you use Trello or Github Projects to create a project plan and assign tasks to each member of the team.
