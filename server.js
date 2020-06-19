@@ -13,7 +13,7 @@ app.use(bodyParser.json());
 app.use(logger('dev'))
 
 
-app.use('/api',recipesRoutes)
+app.use('/api', recipesRoutes)
 
 db.on('error', console.error.bind(console, 'MongoDB connection error: '))
 
