@@ -18,7 +18,6 @@ const Search = (props) => {
     autoFocus
    />
 
-  </form>
- )
+  </form/>
 }
 export default Search;

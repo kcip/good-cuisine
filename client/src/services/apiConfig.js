@@ -5,6 +5,7 @@ let apiUrl
 const apiUrls = {
  production: 'https://sei-good-cuisine.herokuapp.com/api/recipes',
  development: 'http://localhost:4000/api'
+
 }
 
 if (window.location.hostname === 'localhost') {
