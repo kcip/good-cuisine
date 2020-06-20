@@ -1,0 +1,24 @@
+.search-form {
+ display: flex;
+ align-items: center;
+ justify-content: center;
+ height: 13vh;
+}
+.fontAwesomeIcon.search{
+ margin-right: -25px;
+ z-index: 20;
+ 
+}
+.search-input {
+ font-family: 'Roboto', sans-serif;
+ height: 55px;
+ width: 700px;
+ border-radius: 10px;
+ background: #d8d9d8;
+ border: none;
+ padding: 0 0 0 35px;
+ font-size: 20px;
+ color: #767676;
+}
+// font-family: 'Nunito', sans-serif;
+// font-family: 'Roboto', sans-serif;

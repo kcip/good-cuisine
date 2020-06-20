@@ -1,6 +1,7 @@
 import React from 'react';
 import Home from './components/Home'
 import { Route, Switch } from 'react-router-dom'
+import RecipeEdit from './components/RecipeEdit'
 import './App.css';
 import CategoryPage from './components/CategoryPage';
 import SubcategoryPage from './components/SubcategoryPage';
@@ -11,6 +12,8 @@ function App() {
 
       <Switch >
         <Route exact path='/' component={Home} />
+        <Route exact path='/' component={Home} />
+        <Route exact path="/:id/edit" component={RecipeEdit} />
         <Route exact path='/category/:category'>
           <CategoryPage />
         </Route>
@@ -19,6 +22,8 @@ function App() {
         </Route>
       </Switch>
     </div>
+
+
   );
 }
 
