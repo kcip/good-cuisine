@@ -27,7 +27,7 @@ export const createRecipe = async recipe => {
   }
 }
 
-export const updatePost = async (id, recipe) => {
+export const updateRecipe = async (id, recipe) => {
   try {
     const response = await api.put(`/recipes/${id}`, recipe)
     return response.data
