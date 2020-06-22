@@ -1031,6 +1031,8 @@ const main = async () => {
       }
 
     ]
+  await Recipe.deleteMany(recipes)
+
   await Recipe.insertMany(recipes)
   console.log("Created recipes!")
 }

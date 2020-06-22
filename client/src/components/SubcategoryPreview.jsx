@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import RecipeCard from "./RecipeCard"
-import { Link } from 'react-router-dom'
+import { Route, Link } from 'react-router-dom'
+import SubcategoryPage from './SubcategoryPage'
 
 export default class SubcategoryPreview extends Component {
 
@@ -10,11 +11,14 @@ export default class SubcategoryPreview extends Component {
     this.state = {
       categoryName: "",
       subcategoryName: "",
-      threeRecipes: []
+      matchedRecipes: [],
+      names: [],
+      imgURLs: [],
+      cooktimes: []
     }
   }
 
-  componentDidMount() {
+  async componentDidMount() {
 
     let allRecipes = this.props.allRecipes
     let categoryName = this.props.categoryName
@@ -24,12 +28,35 @@ export default class SubcategoryPreview extends Component {
 
     console.log(categoryName)
     console.log(subcategoryName)
+
     // get all matched recipes
-    let matchedRecipes = allRecipes.filter(recipe => recipe[categoryName] === subcategoryName)
+    let matchedRecipes = await allRecipes.filter(recipe => recipe[categoryName] === subcategoryName)
 
     console.log(matchedRecipes)
+    console.log(matchedRecipes.length)
 
-    // to find the first 3 instances that match the subcategories and display the cards
+    let names = []
+    let imgURLs = []
+    let cooktimes = []
+
+    if (matchedRecipes.length > 1) {
+      for (let i = 0; i < 3; i++) {
+        names.push(matchedRecipes[i].name)
+
+        imgURLs.push(matchedRecipes[i].imgURL)
+        cooktimes.push(matchedRecipes[i].cooktime)
+      }
+    }
+
+    console.log(names)
+    console.log(imgURLs)
+
+    this.setState({
+      matchedRecipes,
+      names,
+      imgURLs,
+      cooktimes
+    })
 
   }
 
@@ -38,14 +65,22 @@ export default class SubcategoryPreview extends Component {
   render() {
     return (
       <div>
-        {this.state.subcategoryName}
-        <RecipeCard subcategoryName={this.state.subcategoryName} />
+        <div>
+          {this.state.subcategoryName}
+        </div>
+        <div>
+          <RecipeCard subcategoryName={this.state.subcategoryName} name={this.state.names[0]} imgURL={this.state.imgURLs[0]} />
+
+        </div>
 
 
         <div>
+          <Route exact path="/category/:category/:subcategory">
+            <SubcategoryPage matchedRecipes={this.state.matchedRecipes} />
+          </Route>
           <Link to={"/category/" + this.state.categoryName + "/" + this.state.subcategoryName}>
             More...
-              </Link>
+          </Link>
         </div>
       </div>
     )
