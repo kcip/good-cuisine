@@ -14,7 +14,7 @@ if (window.location.hostname === 'localhost') {
 }
 
 const api = axios.create({
-  baseURL: apiUrl
+  baseURL: 'https://sei-good-cuisine.herokuapp.com/api/'
 })
 
 export default api
