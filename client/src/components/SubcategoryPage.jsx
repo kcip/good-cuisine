@@ -2,6 +2,10 @@ import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
 import RecipeCard from './RecipeCard'
 import { getRecipes } from '../services/recipes'
+import Header from './shared/Header'
+import Footer from './shared/Footer'
+import "./SubcategoryPage.css"
+import Search from './Search'
 
 class SubcategoryPage extends Component {
   constructor(props) {
@@ -26,13 +30,51 @@ class SubcategoryPage extends Component {
     })
 
     const allRecipes = await getRecipes()
+
+    // get all matched recipes
     let matchedRecipes = []
 
-    if (categoryName === "cuisine") {
-      matchedRecipes = allRecipes.filter(recipe => {
-        return recipe.cuisine === subcategoryName
-      })
+    if (categoryName === "cuisine" || categoryName === "difficulty" || categoryName === "course") {
+      matchedRecipes = await allRecipes.filter(recipe => recipe[categoryName] === subcategoryName)
     }
+    else if (categoryName === "cooktime") {
+      switch (subcategoryName) {
+        case "30 minutes or less":
+          matchedRecipes = await allRecipes.filter(recipe => parseInt(recipe[categoryName]) <= 30)
+          break
+        case "60 minutes or less":
+          matchedRecipes = await allRecipes.filter(recipe => parseInt(recipe[categoryName]) <= 60 && parseInt(recipe[categoryName]) > 30)
+          break
+        case "90 minutes or less":
+          matchedRecipes = await allRecipes.filter(recipe => parseInt(recipe[categoryName]) <= 90 && parseInt(recipe[categoryName]) > 60)
+          break
+      }
+    }
+    else if (categoryName === "serving") {
+      switch (subcategoryName) {
+        case "Serve 1 - 3":
+          matchedRecipes = await allRecipes.filter(recipe => parseInt(recipe[categoryName]) <= 3)
+          break
+        case "Serve 4 - 5":
+          matchedRecipes = await allRecipes.filter(recipe => parseInt(recipe[categoryName]) <= 5 && parseInt(recipe[categoryName]) > 3)
+          break
+        case "Serve 6 or more":
+          matchedRecipes = await allRecipes.filter(recipe => parseInt(recipe[categoryName]) >= 6)
+          break
+      }
+    }
+    else if (categoryName === "healthy") {
+      switch (subcategoryName) {
+        case "Vegetarian":
+          matchedRecipes = await allRecipes.filter(recipe => recipe.diet.includes("Vegetarian"))
+          break
+        case "Japanese":
+          matchedRecipes = await allRecipes.filter(recipe => recipe.diet.includes("Japanese"))
+          break
+      }
+    }
+
+    console.log(matchedRecipes)
 
     this.setState({
       matchedRecipes
@@ -43,18 +85,23 @@ class SubcategoryPage extends Component {
   render() {
 
     return (
-      <div>
-        {this.props.match.params.category}
-        <div>
-          {this.props.match.params.subcategory}
+      <>
+        <Header />
+        <div className='search'>
+          <Search />
         </div>
-        <div>
-          {this.state.matchedRecipes.map(recipe => <div>{recipe.name}</div>)}
+        <div className="recipes">
+          <div className="subcategory-name">
+            {this.props.match.params.subcategory}
+          </div>
+          <div className="recipe-cards">
 
+            {this.state.matchedRecipes.map((recipe, index) => <div><RecipeCard subcategoryName={this.state.subcategoryName} name={recipe.name} imgURL={recipe.imgURL} cooktime={recipe.cooktime} /></div>)}
+
+          </div>
         </div>
-
-
-      </div>
+        <Footer />
+      </>
     )
   }
 }

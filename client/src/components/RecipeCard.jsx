@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import './RecipeCard.css'
 
 export default class RecipeCard extends Component {
   constructor(props) {
@@ -17,15 +18,16 @@ export default class RecipeCard extends Component {
 
   render() {
     return (
-      <div>
+      <div className="card">
         <div>
-          <img src={this.props.imgURL} width={'100px'} />
+          <img className="card-image" src={this.props.imgURL} width={'330px'} height={'220px'} />
         </div>
-        <div>
+        <div className="card-name">
           {this.props.name}
-
         </div>
-
+        <div className="card-mins">
+          {this.props.cooktime} minutes
+        </div>
 
       </div>
     )

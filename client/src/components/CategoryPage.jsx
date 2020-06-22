@@ -1,9 +1,11 @@
 import React, { Component } from 'react'
 import { withRouter, Link } from 'react-router-dom'
 import { getRecipes } from '../services/recipes'
-import RecipeCard from './RecipeCard'
-import Layout from './shared/Layout'
+import Header from './shared/Header'
+import Footer from './shared/Footer'
+import Search from './Search'
 import SubcategoryPreview from './SubcategoryPreview'
+import "./CategoryPage.css"
 
 class CategoryPage extends Component {
   constructor(props) {
@@ -25,26 +27,28 @@ class CategoryPage extends Component {
 
     this.setState({ categoryName })
 
-    // get all matched recipes
-    let allMatchedRecipes = []
 
     // https://stackoverflow.com/questions/15125920/how-to-get-distinct-values-from-an-array-of-objects-in-javascript
     if (categoryName === "cuisine" || categoryName === "difficulty" || categoryName === "course") {
-      let subcategories = allRecipes.map(item => item.cuisine)
+      let subcategories = allRecipes.map(item => item[categoryName])
         .filter((value, index, self) => self.indexOf(value) === index)
 
+      console.log(subcategories)
       this.setState({ subcategories })
     }
 
     else if (categoryName === "cooktime") {
       let subcategories = ["30 minutes or less", "60 minutes or less", "90 minutes or less"]
-
       this.setState({ subcategories })
     }
 
     else if (categoryName === "serving") {
-      let subcategories = ["Serve 4 - 5 ", "Serve 6 or more"]
+      let subcategories = ["Serve 1 - 3", "Serve 4 - 5", "Serve 6 or more"]
+      this.setState({ subcategories })
+    }
 
+    else if (categoryName === "healthy") {
+      let subcategories = ["Vegetarian", "Japanese"]
       this.setState({ subcategories })
     }
 
@@ -53,21 +57,28 @@ class CategoryPage extends Component {
 
 
   render() {
+    let categoryName = this.state.categoryName
 
     return (
-      <div>
+      <>
+        <Header />
         <div>
-          {this.state.categoryName}
-        </div>
-        <div>
-          {this.state.subcategories.map((subcategoryName, i) =>
-            <div>
-              <SubcategoryPreview allRecipes={this.state.allRecipes} categoryName={this.state.categoryName} subcategoryName={subcategoryName} />
-            </div>)}
-        </div>
-      </div>
+          <div className="search">
+            <Search />
+          </div>
 
-
+          <div className="category-name">
+            {categoryName.charAt(0).toUpperCase() + categoryName.slice(1)}
+          </div>
+          <div className="subcategories">
+            {this.state.subcategories.map((subcategoryName, i) =>
+              <div>
+                <SubcategoryPreview allRecipes={this.state.allRecipes} categoryName={this.state.categoryName} subcategoryName={subcategoryName} />
+              </div>)}
+          </div>
+        </div>
+        <Footer />
+      </>
     )
   }
 

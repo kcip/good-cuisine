@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import RecipeCard from "./RecipeCard"
 import { Route, Link } from 'react-router-dom'
-import SubcategoryPage from './SubcategoryPage'
+import './SubcategoryPreview.css'
 
 export default class SubcategoryPreview extends Component {
 
@@ -29,8 +29,48 @@ export default class SubcategoryPreview extends Component {
     console.log(categoryName)
     console.log(subcategoryName)
 
+    let matchedRecipes = []
+
     // get all matched recipes
-    let matchedRecipes = await allRecipes.filter(recipe => recipe[categoryName] === subcategoryName)
+    if (categoryName === "cuisine" || categoryName === "difficulty" || categoryName === "course") {
+      matchedRecipes = await allRecipes.filter(recipe => recipe[categoryName] === subcategoryName)
+    }
+    else if (categoryName === "cooktime") {
+      switch (subcategoryName) {
+        case "30 minutes or less":
+          matchedRecipes = await allRecipes.filter(recipe => parseInt(recipe[categoryName]) <= 30)
+          break
+        case "60 minutes or less":
+          matchedRecipes = await allRecipes.filter(recipe => parseInt(recipe[categoryName]) <= 60 && parseInt(recipe[categoryName]) > 30)
+          break
+        case "90 minutes or less":
+          matchedRecipes = await allRecipes.filter(recipe => parseInt(recipe[categoryName]) <= 90 && parseInt(recipe[categoryName]) > 60)
+          break
+      }
+    }
+    else if (categoryName === "serving") {
+      switch (subcategoryName) {
+        case "Serve 1 - 3":
+          matchedRecipes = await allRecipes.filter(recipe => parseInt(recipe[categoryName]) <= 3)
+          break
+        case "Serve 4 - 5":
+          matchedRecipes = await allRecipes.filter(recipe => parseInt(recipe[categoryName]) <= 5 && parseInt(recipe[categoryName]) > 3)
+          break
+        case "Serve 6 or more":
+          matchedRecipes = await allRecipes.filter(recipe => parseInt(recipe[categoryName]) >= 6)
+          break
+      }
+    }
+    else if (categoryName === "healthy") {
+      switch (subcategoryName) {
+        case "Vegetarian":
+          matchedRecipes = await allRecipes.filter(recipe => recipe.diet.includes("Vegetarian"))
+          break
+        case "Japanese":
+          matchedRecipes = await allRecipes.filter(recipe => recipe.diet.includes("Japanese"))
+          break
+      }
+    }
 
     console.log(matchedRecipes)
     console.log(matchedRecipes.length)
@@ -39,17 +79,13 @@ export default class SubcategoryPreview extends Component {
     let imgURLs = []
     let cooktimes = []
 
-    if (matchedRecipes.length > 1) {
-      for (let i = 0; i < 3; i++) {
+    if (matchedRecipes.length > 0) {
+      for (let i = 0; i < Math.min(3, matchedRecipes.length); i++) {
         names.push(matchedRecipes[i].name)
-
         imgURLs.push(matchedRecipes[i].imgURL)
         cooktimes.push(matchedRecipes[i].cooktime)
       }
     }
-
-    console.log(names)
-    console.log(imgURLs)
 
     this.setState({
       matchedRecipes,
@@ -57,27 +93,24 @@ export default class SubcategoryPreview extends Component {
       imgURLs,
       cooktimes
     })
-
   }
-
 
 
   render() {
     return (
-      <div>
-        <div>
+      <div className="sub-preview">
+        <div className="sub-name">
           {this.state.subcategoryName}
         </div>
-        <div>
-          <RecipeCard subcategoryName={this.state.subcategoryName} name={this.state.names[0]} imgURL={this.state.imgURLs[0]} />
+        <div className="preview-cards">
+          {this.state.names.map((name, index) =>
+            <RecipeCard subcategoryName={this.state.subcategoryName} name={name} imgURL={this.state.imgURLs[index]} cooktime={this.state.cooktimes[index]} />)
+          }
 
         </div>
 
 
-        <div>
-          <Route exact path="/category/:category/:subcategory">
-            <SubcategoryPage matchedRecipes={this.state.matchedRecipes} />
-          </Route>
+        <div className="more">
           <Link to={"/category/" + this.state.categoryName + "/" + this.state.subcategoryName}>
             More...
           </Link>
