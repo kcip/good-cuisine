@@ -40,10 +40,13 @@ const Concierge = (props) => {
       <div className="concierge">
 
         <div className="concierge--quick quick-link">
-          <Link to="/concierge/quick">Quick</Link>
+          {/* <Link to="/concierge/quick">Quick</Link> */}
+          <Link to={"/category/cooktime/30 minutes or less"}>
+            Quick
+           </Link>
         </div>
         <div className="concierge--easy quick-link">
-          <Link to={"/category/difficulty/easy"}>
+          <Link to={"/category/difficulty/Easy"}>
             Easy
            </Link>
         </div>
@@ -52,8 +55,8 @@ const Concierge = (props) => {
             American
            </Link>
         </div>
-        <div className="concierge--cuisine quick-link">Dinner
-        <Link to={"/category/course/Dinner"}>
+        <div className="concierge--cuisine quick-link">
+          <Link to={"/category/course/Dinner"}>
             Dinner
            </Link>
         </div>
@@ -67,7 +70,7 @@ const Concierge = (props) => {
         </div>
         <div className="quick-link">Cooking Method</div>
         <div className="quick-link">
-          <Link to={"/category/heathy"}>
+          <Link to={"/category/healthy"}>
             Healthy
            </Link>
         </div>
