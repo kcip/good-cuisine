@@ -6,11 +6,11 @@ import RecipeCreate from './components/RecipeCreate';
 import './App.css';
 import CategoryPage from './components/CategoryPage';
 import SubcategoryPage from './components/SubcategoryPage';
-import RecipeDetail from './components/RecipeDetail';
+import RecipeDetail from './components/RecipeDetail'
 
 function App() {
-  return (
-    <div className="app">
+ return (
+  <div className="app">
 
       <Switch >
         <Route exact path='/' component={Home} />
@@ -27,7 +27,7 @@ function App() {
     </div>
 
 
-  );
+ );
 }
 
 export default App;

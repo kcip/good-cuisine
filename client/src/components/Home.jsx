@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import { Route } from 'react-router-dom'
 import { getRecipes } from '../services/recipes.js'
 import Header from './shared/Header';
 import Footer from './shared/Footer'
@@ -9,6 +10,8 @@ import './home.scss'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Concierge from './Concierge';
+import ConciergeList from './ConciergeList.jsx';
 export default class Home extends Component {
  constructor() {
   super()
@@ -67,9 +70,13 @@ export default class Home extends Component {
       ))}
      </Slider>
       all recipes here
-     {console.log('48', this.state.recipes)}
+     {/* {console.log('48', this.state.recipes)} */}
     </div>
     <TimeOfDay />
+    <Concierge data={this.state.recipes} />
+    <Route path="/concierge/:category">
+     <ConciergeList data={this.state.recipes} />
+    </Route>
     <Footer />
    </>
   )
