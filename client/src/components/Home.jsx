@@ -5,7 +5,7 @@ import Header from './shared/Header';
 import Footer from './shared/Footer'
 import Search from '../components/Search'
 import TimeOfDay from './TimeOfDay'
-//import Layout from './shared/Layout'
+import Layout from './shared/Layout'
 import './home.scss'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
