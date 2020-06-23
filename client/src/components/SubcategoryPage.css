@@ -12,21 +12,37 @@
 .recipes{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  padding: 10px;
-  text-align: center;
-
+  justify-content: center;
+  margin: 20px;
 }
 .recipe-cards{
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
   font-size: 20px;
-  justify-content: flex-start;
-  margin: 20px;
-  
+  justify-content: center;
+  align-items: flex-start;
+  padding: 10px;
 }
 .search{
   margin: 20px;
   text-align: center;
+}
+
+@media(max-width: 600px){
+  .subcategory-name{
+    font-size: 40px;
+  }
+}
+
+@media(max-width: 400px){
+  .recipes{
+    margin: 0 auto;
+  }
+  .recipe-cards{
+    padding: 2px;
+  }
+  .subcategory-name{
+    font-size: 34px;
+  }
 }

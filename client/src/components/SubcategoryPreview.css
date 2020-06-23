@@ -29,3 +29,12 @@ a{
   align-self: flex-end;
   margin: 10px;
 }
+@media(max-width:1069px){
+  .preview-cards{
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .more{
+    align-self: center;
+  }
+}

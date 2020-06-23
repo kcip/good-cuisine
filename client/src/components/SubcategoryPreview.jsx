@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import RecipeCard from "./RecipeCard"
-import { Route, Link } from 'react-router-dom'
+import { Link } from 'react-router-dom'
 import './SubcategoryPreview.css'
 
 export default class SubcategoryPreview extends Component {
@@ -104,12 +104,11 @@ export default class SubcategoryPreview extends Component {
         </div>
         <div className="preview-cards">
           {this.state.names.map((name, index) =>
-            <RecipeCard subcategoryName={this.state.subcategoryName} name={name} imgURL={this.state.imgURLs[index]} cooktime={this.state.cooktimes[index]} />)
+            <Link to={"/" + this.state.matchedRecipes[index]._id}>
+              <RecipeCard subcategoryName={this.state.subcategoryName} name={name} imgURL={this.state.imgURLs[index]} cooktime={this.state.cooktimes[index]} />
+            </Link>)
           }
-
         </div>
-
-
         <div className="more">
           <Link to={"/category/" + this.state.categoryName + "/" + this.state.subcategoryName}>
             More...
