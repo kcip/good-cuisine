@@ -7,3 +7,38 @@ div >.slick-images  {
 height: 50vh;
 object-fit: contain;
 }
+
+.concierge,
+.concierge--filters {
+ display: flex;
+ flex-wrap: wrap;
+ min-height: 20vh;
+ width: 100vw;
+ justify-content: center;
+ align-items: center;
+ max-width: 50vw;
+ margin: auto;
+}
+.concierge--filters {
+ margin-bottom: 50px;
+
+  & .quick-link {
+   font-size: 20px;
+   font-weight: bold;
+   line-height: 1.2;
+   color: white;
+  }
+}
+.quick-link{
+ font-family: 'Roboto', sans-serif;
+ width: 200px;
+ height: 200px;
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
+ align-items: center;
+ background:#333;
+ margin: 5px;
+ border-radius: 10px;
+ box-shadow: 0 4px 4px 0 rgba(0,0,0,0.25)
+}
