@@ -6,6 +6,7 @@ import RecipeCreate from './components/RecipeCreate';
 import './App.css';
 import CategoryPage from './components/CategoryPage';
 import SubcategoryPage from './components/SubcategoryPage';
+import RecipeDetail from './components/RecipeDetail';
 
 function App() {
   return (
@@ -13,7 +14,7 @@ function App() {
 
       <Switch >
         <Route exact path='/' component={Home} />
-        <Route exact path='/' component={Home} />
+        <Route path='/:id' component={RecipeDetail}/>
         <Route exact path="/:id/edit" component={RecipeEdit} />
         <Route exact path="/recipecreate/:name" exact component={RecipeCreate} />
         <Route exact path='/category/:category'>
