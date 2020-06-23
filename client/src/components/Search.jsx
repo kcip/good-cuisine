@@ -4,7 +4,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 const Search = (props) => {
  return (
-  <form className="search-form" onSubmit={(e) => props.onSubmit(e)}>
+  < form className="search-form" onSubmit={(e) => props.onSubmit(e)}>
    <span className="fontAwesomeIcon search">
     <FontAwesomeIcon icon={faSearch} color="#767676" />
    </span>
@@ -18,6 +18,8 @@ const Search = (props) => {
     autoFocus
    />
 
-  </form/>
+     </form>
+ )    
 }
-export default Search;
+  
+export default Search 
