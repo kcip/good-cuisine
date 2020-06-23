@@ -1,5 +1,6 @@
 import React from 'react';
 import Home from './components/Home'
+import Login from './components/shared/Login'
 import { Route, Switch } from 'react-router-dom'
 import RecipeEdit from './components/RecipeEdit'
 import RecipeCreate from './components/RecipeCreate';
@@ -14,7 +15,8 @@ function App() {
 
       <Switch >
         <Route exact path='/' component={Home} />
-        <Route exact path="/recipecreate/:name" exact component={RecipeCreate} />
+        <Route exact path='/login' component={Login} />
+        <Route path="/recipecreate" component={RecipeCreate} />
         <Route exact path='/category/:category'>
           <CategoryPage />
         </Route>

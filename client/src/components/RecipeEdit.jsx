@@ -180,7 +180,6 @@ class RecipeEdit extends Component {
             <button type='submit' className="submit-button">Submit Please!</button>
           </form>
         </div>
-      
     )
   }
 }
