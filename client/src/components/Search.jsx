@@ -42,7 +42,7 @@ const Search = (props) => {
      autoFocus
      autoComplete="off"
      onKeyPress={setSearchModal}
-     onBlur={setSearchModal}
+    //onBlur={setSearchModal}
     />
     {console.log(recipeSearch)}
    </form>

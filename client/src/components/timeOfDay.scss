@@ -1,5 +1,8 @@
 .timeOfDay {
-
+ margin: 40px 0 0px 0;
+ width: 100vw;
+ display: flex;
+ justify-content: center;
  &--p {
   color: #000;
   font-size: 40px;
@@ -7,7 +10,7 @@
   line-height: 1.4;
   font-family: 'Nunito', sans-serif;
   display: flex;
-  align-items: center;
+  // align-items: center;
   
  }
 
