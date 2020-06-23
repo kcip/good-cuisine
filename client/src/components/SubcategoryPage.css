@@ -10,18 +10,21 @@
   text-align: center;
 }
 .recipes{
-  margin:20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+
 }
 .recipe-cards{
   display:flex;
   flex-direction: row;
   flex-wrap: wrap;
   font-size: 20px;
-  justify-content: space-around;
   justify-content: flex-start;
-  
-  align-items: center;
   margin: 20px;
+  
 }
 .search{
   margin: 20px;

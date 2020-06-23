@@ -90,6 +90,7 @@ class SubcategoryPage extends Component {
         <div className='search'>
           <Search />
         </div>
+
         <div className="recipes">
           <div className="subcategory-name">
             {this.props.match.params.subcategory}
@@ -100,6 +101,8 @@ class SubcategoryPage extends Component {
 
           </div>
         </div>
+
+
         <Footer />
       </>
     )
