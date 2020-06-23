@@ -2,6 +2,7 @@ import React from 'react'
 import './search.scss'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+
 const Search = (props) => {
   return (
     <form className="search-form" onSubmit={(e) => props.onSubmit(e)}>
