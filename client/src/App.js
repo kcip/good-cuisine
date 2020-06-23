@@ -9,13 +9,11 @@ import SubcategoryPage from './components/SubcategoryPage';
 import RecipeDetail from './components/RecipeDetail'
 
 function App() {
- return (
-  <div className="app">
+  return (
+    <div className="app">
 
       <Switch >
         <Route exact path='/' component={Home} />
-        <Route path='/:id' component={RecipeDetail}/>
-        <Route exact path="/:id/edit" component={RecipeEdit} />
         <Route exact path="/recipecreate/:name" exact component={RecipeCreate} />
         <Route exact path='/category/:category'>
           <CategoryPage />
@@ -23,11 +21,13 @@ function App() {
         <Route exact path="/category/:category/:subcategory">
           <SubcategoryPage />
         </Route>
+        <Route path='/:id' component={RecipeDetail} />
+        <Route exact path="/:id/edit" component={RecipeEdit} />
       </Switch>
     </div>
 
 
- );
+  );
 }
 
 export default App;
