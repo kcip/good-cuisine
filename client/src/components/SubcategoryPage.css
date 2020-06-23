@@ -1,0 +1,32 @@
+.subcategory-name{
+  margin: 20px;
+  font-family: AdobeCaslonPro;
+  font-size: 50px;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.4;
+  color: var(--black-two);
+  text-align: center;
+}
+.recipes{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  text-align: center;
+
+}
+.recipe-cards{
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  font-size: 20px;
+  justify-content: flex-start;
+  margin: 20px;
+  
+}
+.search{
+  margin: 20px;
+  text-align: center;
+}

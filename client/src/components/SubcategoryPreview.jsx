@@ -1,39 +1,37 @@
 import React, { Component } from 'react'
-import { withRouter } from 'react-router-dom'
-import RecipeCard from './RecipeCard'
-import { getRecipes } from '../services/recipes'
-import Header from './shared/Header'
-import Footer from './shared/Footer'
-import "./SubcategoryPage.css"
-import Search from './Search'
+import RecipeCard from "./RecipeCard"
+import { Route, Link } from 'react-router-dom'
+import './SubcategoryPreview.css'
 
-class SubcategoryPage extends Component {
+export default class SubcategoryPreview extends Component {
+
   constructor(props) {
     super(props)
 
     this.state = {
       categoryName: "",
       subcategoryName: "",
-      matchedRecipes: []
+      matchedRecipes: [],
+      names: [],
+      imgURLs: [],
+      cooktimes: []
     }
   }
 
-
   async componentDidMount() {
 
-    const categoryName = this.props.match.params.category
-    const subcategoryName = this.props.match.params.subcategory
+    let allRecipes = this.props.allRecipes
+    let categoryName = this.props.categoryName
+    let subcategoryName = this.props.subcategoryName
 
-    this.setState({
-      categoryName,
-      subcategoryName
-    })
+    this.setState({ categoryName, subcategoryName })
 
-    const allRecipes = await getRecipes()
+    console.log(categoryName)
+    console.log(subcategoryName)
 
-    // get all matched recipes
     let matchedRecipes = []
 
+    // get all matched recipes
     if (categoryName === "cuisine" || categoryName === "difficulty" || categoryName === "course") {
       matchedRecipes = await allRecipes.filter(recipe => recipe[categoryName] === subcategoryName)
     }
@@ -75,38 +73,49 @@ class SubcategoryPage extends Component {
     }
 
     console.log(matchedRecipes)
+    console.log(matchedRecipes.length)
+
+    let names = []
+    let imgURLs = []
+    let cooktimes = []
+
+    if (matchedRecipes.length > 0) {
+      for (let i = 0; i < Math.min(3, matchedRecipes.length); i++) {
+        names.push(matchedRecipes[i].name)
+        imgURLs.push(matchedRecipes[i].imgURL)
+        cooktimes.push(matchedRecipes[i].cooktime)
+      }
+    }
 
     this.setState({
-      matchedRecipes
+      matchedRecipes,
+      names,
+      imgURLs,
+      cooktimes
     })
-
   }
 
+
   render() {
-
     return (
-      <>
-        <Header />
-        <div className='search'>
-          <Search />
+      <div className="sub-preview">
+        <div className="sub-name">
+          {this.state.subcategoryName}
         </div>
+        <div className="preview-cards">
+          {this.state.names.map((name, index) =>
+            <RecipeCard subcategoryName={this.state.subcategoryName} name={name} imgURL={this.state.imgURLs[index]} cooktime={this.state.cooktimes[index]} />)
+          }
 
-        <div className="recipes">
-          <div className="subcategory-name">
-            {this.props.match.params.subcategory}
-          </div>
-          <div className="recipe-cards">
-
-            {this.state.matchedRecipes.map((recipe, index) => <div><RecipeCard subcategoryName={this.state.subcategoryName} name={recipe.name} imgURL={recipe.imgURL} cooktime={recipe.cooktime} /></div>)}
-
-          </div>
         </div>
 
 
-        <Footer />
-      </>
+        <div className="more">
+          <Link to={"/category/" + this.state.categoryName + "/" + this.state.subcategoryName}>
+            More...
+          </Link>
+        </div>
+      </div>
     )
   }
 }
-
-export default withRouter(SubcategoryPage)

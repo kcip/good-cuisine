@@ -238,13 +238,13 @@ const main = async () => {
           "Bake",
           "Broil"
         ],
-        "course": "Appertizer",
+        "course": "Appetizer",
         "serving": "6",
         "keyword": [
           "buffalo wings",
           "chicken wings",
           "wings",
-          "appertizer"
+          "appetizer"
         ],
         "saved": false
       },
@@ -470,7 +470,7 @@ const main = async () => {
         "cuisine": "Italian",
         "cooktime": "30",
         "difficulty": "Easy",
-        "diet": ["vegetarian"],
+        "diet": ["Vegetarian"],
         "cookingMethod": ["boiling"],
         "course": "Dinner",
         "serving": "4",
@@ -516,8 +516,8 @@ const main = async () => {
         ],
         "cuisine": "Italian",
         "cooktime": "75",
-        "difficulty": "Intermediate",
-        "diet": ["keto"],
+        "difficulty": "Medium",
+        "diet": ["Keto"],
         "cookingMethod": ["baking, frying"],
         "course": "Dinner",
         "serving": "4",
@@ -563,8 +563,8 @@ const main = async () => {
         ],
         "cuisine": "Italian",
         "cooktime": "120",
-        "difficulty": "Intermediate",
-        "diet": ["keto"],
+        "difficulty": "Medium",
+        "diet": ["Keto"],
         "cookingMethod": ["cooking"],
         "course": "Dinner",
         "serving": "6",
@@ -608,7 +608,7 @@ const main = async () => {
         "cuisine": "Italian",
         "cooktime": "135",
         "difficulty": "Easy",
-        "diet": ["keto"],
+        "diet": ["Keto"],
         "cookingMethod": ["cooking"],
         "course": "Dinner",
         "serving": "6",
@@ -644,7 +644,7 @@ const main = async () => {
         "cuisine": "Italian",
         "cooktime": "30",
         "difficulty": "Easy",
-        "diet": ["keto"],
+        "diet": ["Keto"],
         "cookingMethod": ["baking"],
         "course": "Dinner",
         "serving": "8",
@@ -733,7 +733,7 @@ const main = async () => {
         "cooktime": "20",
         "difficulty": "Easy",
         "diet": [
-          "vegetarian"
+          "Vegetarian"
         ],
         "cookingMethod": [
           "Grilled"
@@ -785,7 +785,7 @@ const main = async () => {
         "cooktime": "20",
         "difficulty": "Medium",
         "diet": [
-          "Vegertaian"
+          "Vegetarian"
         ],
         "cookingMethod": [
           "fry"
@@ -895,7 +895,7 @@ const main = async () => {
         "saved": false
       },
       {
-        "name": "Tacos Al PAstor ",
+        "name": "Tacos Al Pastor ",
         "imgURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190130-tacos-al-pastor-horizontal-1-1549571422.png?crop=0.668xw:1.00xh;0.175xw,0&resize=768:*    ",
         "videoURL": "",
         "ingredients": [
@@ -952,7 +952,7 @@ const main = async () => {
           "On warmed tortillas, add pork, pineapple, onions, and cilantro. Serve with lime wedges."
         ],
         "cuisine": "Mexican",
-        "cooktime": "5H",
+        "cooktime": "300",
         "difficulty": "Hard",
         "diet": [
           "Carbs"
@@ -1009,7 +1009,7 @@ const main = async () => {
           "Bake until cheese is melty, 15 to 18 minutes.",
           "Garnish with tomatoes, avocado, onion, and cilantro."
         ],
-        "cuisine": "Mexcian",
+        "cuisine": "Mexican",
         "cooktime": "50",
         "difficulty": "Medium",
         "diet": [
@@ -1019,7 +1019,7 @@ const main = async () => {
           "heat",
           "bake"
         ],
-        "course": "Diet",
+        "course": "Dinner",
         "serving": "4",
         "keyword": [
           "avocado",
@@ -1031,6 +1031,8 @@ const main = async () => {
       }
 
     ]
+  await Recipe.deleteMany()
+
   await Recipe.insertMany(recipes)
   console.log("Created recipes!")
 }

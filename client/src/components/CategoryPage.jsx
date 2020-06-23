@@ -1,16 +1,19 @@
 import React, { Component } from 'react'
 import { withRouter, Link } from 'react-router-dom'
 import { getRecipes } from '../services/recipes'
-import RecipeCard from './RecipeCard'
-import Layout from './shared/Layout'
+import Header from './shared/Header'
+import Footer from './shared/Footer'
+import Search from './Search'
+import SubcategoryPreview from './SubcategoryPreview'
+import "./CategoryPage.css"
 
 class CategoryPage extends Component {
   constructor(props) {
     super(props)
     this.state = {
+      allRecipes: [],
       categoryName: '',
-      subcategories: [],
-      matchedRecipes: []
+      subcategories: []
     }
   }
 
@@ -18,27 +21,16 @@ class CategoryPage extends Component {
     const allRecipes = await getRecipes()
     console.log(allRecipes)
 
+    this.setState({ allRecipes })
+
     const categoryName = this.props.match.params.category + ""
 
     this.setState({ categoryName })
 
-    let matchedRecipes = []
-
 
     // https://stackoverflow.com/questions/15125920/how-to-get-distinct-values-from-an-array-of-objects-in-javascript
-    if (categoryName === "cuisine") {
-      let subcategories = allRecipes.map(item => item.cuisine)
-        .filter((value, index, self) => self.indexOf(value) === index)
-
-      console.log(subcategories)
-      this.setState({ subcategories })
-
-      // to find the first 3 instances that match the subcategories
-
-    }
-
-    else if (categoryName === "difficulty") {
-      let subcategories = allRecipes.map(item => item.difficulty)
+    if (categoryName === "cuisine" || categoryName === "difficulty" || categoryName === "course") {
+      let subcategories = allRecipes.map(item => item[categoryName])
         .filter((value, index, self) => self.indexOf(value) === index)
 
       console.log(subcategories)
@@ -47,53 +39,46 @@ class CategoryPage extends Component {
 
     else if (categoryName === "cooktime") {
       let subcategories = ["30 minutes or less", "60 minutes or less", "90 minutes or less"]
-
-      console.log(subcategories)
       this.setState({ subcategories })
     }
 
     else if (categoryName === "serving") {
-      let subcategories = ["Serve 4 - 5 ", "Serve 6 or more"]
-
-      console.log(subcategories)
+      let subcategories = ["Serve 1 - 3", "Serve 4 - 5", "Serve 6 or more"]
       this.setState({ subcategories })
     }
 
-    else if (categoryName === "course") {
-      let subcategories = allRecipes.map(item => item.course)
-        .filter((value, index, self) => self.indexOf(value) === index)
-
-      console.log(subcategories)
+    else if (categoryName === "healthy") {
+      let subcategories = ["Vegetarian", "Japanese"]
       this.setState({ subcategories })
     }
+
 
   }
 
 
   render() {
+    let categoryName = this.state.categoryName
 
     return (
-      <div>
+      <>
+        <Header />
         <div>
-          {this.state.categoryName}
-        </div>
-        <div>
-          {this.state.subcategories.map((subcategoryName, i) =>
-            <div>
-              {subcategoryName}
+          <div className="search">
+            <Search />
+          </div>
+
+          <div className="category-name">
+            {categoryName.charAt(0).toUpperCase() + categoryName.slice(1)}
+          </div>
+          <div className="subcategories">
+            {this.state.subcategories.map((subcategoryName, i) =>
               <div>
-                <RecipeCard category={this.state.categoryName} subcategoryName={subcategoryName} index="0" />
-                <RecipeCard category={this.state.categoryName} subcategoryName={subcategoryName} index="1" />
-                <RecipeCard category={this.state.categoryName} subcategoryName={subcategoryName} index="2" />
-              </div>
-              <Link to={"/category/" + this.state.categoryName + "/" + subcategoryName}>
-                More...
-              </Link>
-            </div>)}
+                <SubcategoryPreview allRecipes={this.state.allRecipes} categoryName={this.state.categoryName} subcategoryName={subcategoryName} />
+              </div>)}
+          </div>
         </div>
-      </div>
-
-
+        <Footer />
+      </>
     )
   }
 
