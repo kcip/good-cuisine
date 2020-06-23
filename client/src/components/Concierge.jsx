@@ -4,61 +4,95 @@ import { getRecipes } from '../services/recipes'
 //import ConciergeList from './ConciergeList'
 const Concierge = (props) => {
 
- const [recipes, setRecipes] = useState([])
- const [quick, setQuick] = useState([])
- const [easy, setEasy] = useState([])
- const [cusine, setCuisine] = useState([])
- const [course, setCourse] = useState([])
+  const [recipes, setRecipes] = useState([])
+  const [quick, setQuick] = useState([])
+  const [easy, setEasy] = useState([])
+  const [cusine, setCuisine] = useState([])
+  const [course, setCourse] = useState([])
 
- useEffect(() => {
-  async function getData() {
-   const response = await getRecipes()
-   setRecipes(response)
-  }
+  useEffect(() => {
+    async function getData() {
+      const response = await getRecipes()
+      setRecipes(response)
+    }
 
-  getData()
- }, [])
-
-
- useEffect(() => {
-  const setFilter = async () => {
-   const quickRecipes = await recipes.filter(recipe => recipe.cooktime <= '30')
-   const difficultyRecipes = await recipes.filter(recipe => recipe.difficulty.toLowerCase() === 'easy')
-   const americanRecipes = await recipes.filter(recipe => recipe.cuisine.toLowerCase() === 'american')
-   const courseRecipes = await recipes.filter(recipe => recipe.course.toLowerCase() === 'dinner')
-   setQuick(quickRecipes)
-   setEasy(difficultyRecipes)
-   setCuisine(americanRecipes)
-   setCourse(courseRecipes)
-  }
-  setFilter()
- }, [recipes])
+    getData()
+  }, [])
 
 
- return (
-  <>
-   <div className="concierge">
+  useEffect(() => {
+    const setFilter = async () => {
+      const quickRecipes = await recipes.filter(recipe => recipe.cooktime <= '30')
+      const difficultyRecipes = await recipes.filter(recipe => recipe.difficulty.toLowerCase() === 'easy')
+      const americanRecipes = await recipes.filter(recipe => recipe.cuisine.toLowerCase() === 'american')
+      const courseRecipes = await recipes.filter(recipe => recipe.course.toLowerCase() === 'dinner')
+      setQuick(quickRecipes)
+      setEasy(difficultyRecipes)
+      setCuisine(americanRecipes)
+      setCourse(courseRecipes)
+    }
+    setFilter()
+  }, [recipes])
 
-    <div className="concierge--quick quick-link">
-     <Link to="/concierge/quick">Quick</Link>
-    </div>
-    <div className="concierge--easy quick-link">Easy</div>
-    <div className="concierge--cuisine quick-link">American</div>
-    <div className="concierge--cuisine quick-link">Dinner</div>
-   </div>
 
-   <div className="concierge--filters">
-    <div className="quick-link">Time</div>
-    <div className="quick-link">Cooking Method</div>
-    <div className="quick-link">Healthy</div>
-    <div className="quick-link">Servings</div>
-    <div className="quick-link">Difficulty</div>
-    <div className="quick-link">???</div>
-    <div className="quick-link">???</div>
-    <div className="quick-link">???</div>
-   </div>
-  </>
- )
+  return (
+    <>
+      <div className="concierge">
+
+        <div className="concierge--quick quick-link">
+          <Link to="/concierge/quick">Quick</Link>
+        </div>
+        <div className="concierge--easy quick-link">
+          <Link to={"/category/difficulty/easy"}>
+            Easy
+           </Link>
+        </div>
+        <div className="concierge--cuisine quick-link">
+          <Link to={"/category/cuisine/American"}>
+            American
+           </Link>
+        </div>
+        <div className="concierge--cuisine quick-link">Dinner
+        <Link to={"/category/course/Dinner"}>
+            Dinner
+           </Link>
+        </div>
+      </div>
+
+      <div className="concierge--filters">
+        <div className="quick-link">
+          <Link to={"/category/cooktime"}>
+            Time
+           </Link>
+        </div>
+        <div className="quick-link">Cooking Method</div>
+        <div className="quick-link">
+          <Link to={"/category/heathy"}>
+            Healthy
+           </Link>
+        </div>
+        <div className="quick-link">
+          <Link to={"/category/serving"}>
+            Serving
+           </Link>
+        </div>
+        <div className="quick-link">
+          <Link to={"/category/difficulty"}>
+            Difficulty
+           </Link>
+        </div>
+        <div className="quick-link">
+          <Link to={"/category/cuisine"}>
+            Cuisine
+           </Link>
+        </div>
+        <div className="quick-link">
+          <Link to={"/category/course"}>
+            Course
+           </Link></div>
+      </div>
+    </>
+  )
 
 }
 export default withRouter(Concierge)

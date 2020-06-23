@@ -952,7 +952,7 @@ const main = async () => {
           "On warmed tortillas, add pork, pineapple, onions, and cilantro. Serve with lime wedges."
         ],
         "cuisine": "Mexican",
-        "cooktime": "5H",
+        "cooktime": "300",
         "difficulty": "Hard",
         "diet": [
           "Carbs"
