@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import { withRouter } from 'react-router-dom'
+import { withRouter, Link } from 'react-router-dom'
 import RecipeCard from './RecipeCard'
 import { getRecipes } from '../services/recipes'
 import Header from './shared/Header'
@@ -74,7 +74,7 @@ class SubcategoryPage extends Component {
       }
     }
 
-    console.log(matchedRecipes)
+    //console.log(matchedRecipes)
 
     this.setState({
       matchedRecipes
@@ -85,7 +85,7 @@ class SubcategoryPage extends Component {
   render() {
 
     return (
-      <>
+      <div>
         <Header />
         <div className='search'>
           <Search />
@@ -96,15 +96,15 @@ class SubcategoryPage extends Component {
             {this.props.match.params.subcategory}
           </div>
           <div className="recipe-cards">
-
-            {this.state.matchedRecipes.map((recipe, index) => <div><RecipeCard subcategoryName={this.state.subcategoryName} name={recipe.name} imgURL={recipe.imgURL} cooktime={recipe.cooktime} /></div>)}
-
+            {this.state.matchedRecipes.map((recipe, index) =>
+              <Link to={"/" + recipe._id}>
+                <RecipeCard subcategoryName={this.state.subcategoryName} name={recipe.name} imgURL={recipe.imgURL} cooktime={recipe.cooktime} />
+              </Link>
+            )}
           </div>
         </div>
-
-
         <Footer />
-      </>
+      </div>
     )
   }
 }
