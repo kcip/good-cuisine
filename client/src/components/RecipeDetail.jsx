@@ -51,16 +51,25 @@ class RecipeDetail extends Component {
     })
     console.log(step)
     return (<>
+      <div className="name">
+      <h2>{recipe.name}</h2>
+      </div>
       <div className="recipe-deatil">
+    
         <div className="vid">
-          <iframe src={recipe.videoURL} width="540" height="450"></iframe>
+          <iframe src={recipe.videoURL} width="1080px" height="607px"></iframe>
         </div>
-        <div className="ingredients">
-          <p>Ingredients:{recipe.ingredients}</p>
+        <button class="tablinks" onclick={recipe.ingredients}>Ingredients</button>
+  <button class="tablinks" onclick="openCity(event, 'Equipment')">Equipment</button>
+        <div className="container">
+        <div id={recipe.ingredients} class="tabcontent">
+        
         </div>
-        <div className="equipment">
+        <div id="Equipment" class="tabcontent">
           <p>equipment:{recipe.equipment}</p>
-        </div>
+          </div>
+          </div>
+        
         <div className="instructions">
           {step}
 
