@@ -42,8 +42,8 @@ const main = async () => {
           "Vegetarian"
         ],
         "cookingMethod": [
-          "Toast",
-          "Fry"
+          "bake",
+          "fry"
         ],
         "course": "Breakfast",
         "serving": "2",
@@ -89,7 +89,7 @@ const main = async () => {
         "difficulty": "Medium",
         "diet": [],
         "cookingMethod": [
-          "Bake"
+          "bake"
         ],
         "course": "Dinner",
         "serving": "4",
@@ -141,8 +141,9 @@ const main = async () => {
           "Vegetarian"
         ],
         "cookingMethod": [
-          "Broil",
-          "Saute"
+          "broil",
+          "saute",
+          "simmer"
         ],
         "course": "Dinner",
         "serving": "6",
@@ -189,7 +190,7 @@ const main = async () => {
         "difficulty": "Easy",
         "diet": [],
         "cookingMethod": [
-          "Saute"
+          "saute"
         ],
         "course": "Breakfast",
         "serving": "4",
@@ -235,8 +236,8 @@ const main = async () => {
         "difficulty": "Easy",
         "diet": [],
         "cookingMethod": [
-          "Bake",
-          "Broil"
+          "bake",
+          "broil"
         ],
         "course": "Appetizer",
         "serving": "6",
@@ -276,7 +277,7 @@ const main = async () => {
         "cooktime": "30",
         "difficulty": "Medium",
         "diet": ["Japanese"],
-        "cookingMethod": ["Stove"],
+        "cookingMethod": ["broil", "simmer"],
         "course": "Lunch, Dinner",
         "serving": "4",
         "keyword": ["Japanese", "Lunch", "Dinner", "Soup"],
@@ -427,7 +428,7 @@ const main = async () => {
         "cooktime": "30",
         "difficulty": "Easy",
         "diet": ["Japanese"],
-        "cookingMethod": ["frying"],
+        "cookingMethod": ["fry"],
         "course": "Dinner",
         "serving": "4",
         "keyword": ["Japanese", "Dinner"],
@@ -471,7 +472,7 @@ const main = async () => {
         "cooktime": "30",
         "difficulty": "Easy",
         "diet": ["Vegetarian"],
-        "cookingMethod": ["boiling"],
+        "cookingMethod": ["broil", "saute"],
         "course": "Dinner",
         "serving": "4",
         "keyword": ["Italian", "Dinner"],
@@ -518,7 +519,7 @@ const main = async () => {
         "cooktime": "75",
         "difficulty": "Medium",
         "diet": ["Keto"],
-        "cookingMethod": ["baking, frying"],
+        "cookingMethod": ["bake", "fry"],
         "course": "Dinner",
         "serving": "4",
         "keyword": ["Italian", "Dinner"],
@@ -565,7 +566,7 @@ const main = async () => {
         "cooktime": "120",
         "difficulty": "Medium",
         "diet": ["Keto"],
-        "cookingMethod": ["cooking"],
+        "cookingMethod": ["saute", "simmer"],
         "course": "Dinner",
         "serving": "6",
         "keyword": ["Italian", "Dinner"],
@@ -609,7 +610,7 @@ const main = async () => {
         "cooktime": "135",
         "difficulty": "Easy",
         "diet": ["Keto"],
-        "cookingMethod": ["cooking"],
+        "cookingMethod": ["saute", "broil", "simmer"],
         "course": "Dinner",
         "serving": "6",
         "keyword": ["Italian", "Dinner"],
@@ -645,7 +646,7 @@ const main = async () => {
         "cooktime": "30",
         "difficulty": "Easy",
         "diet": ["Keto"],
-        "cookingMethod": ["baking"],
+        "cookingMethod": ["bake"],
         "course": "Dinner",
         "serving": "8",
         "keyword": ["Italian", "Dinner"],
@@ -690,8 +691,9 @@ const main = async () => {
         "difficulty": "Medium",
         "diet": [],
         "cookingMethod": [
-          "Fry",
-          "Boil"
+          "fry",
+          "broil",
+          "simmer"
         ],
         "course": "Dinner",
         "serving": "4",
@@ -736,7 +738,7 @@ const main = async () => {
           "Vegetarian"
         ],
         "cookingMethod": [
-          "Grilled"
+          "grill"
         ],
         "course": "Appetizer",
         "serving": "4",
@@ -883,7 +885,7 @@ const main = async () => {
           "Meat"
         ],
         "cookingMethod": [
-          "Fry"
+          "fry"
         ],
         "course": "Dinner",
         "serving": "4",
@@ -1016,7 +1018,7 @@ const main = async () => {
           "Vegetarian"
         ],
         "cookingMethod": [
-          "heat",
+          "saute",
           "bake"
         ],
         "course": "Dinner",

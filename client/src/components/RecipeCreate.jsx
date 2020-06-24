@@ -43,26 +43,29 @@ class RecipeCreate extends Component {
   handleSubmit = async (event) => {
     event.preventDefault()
     const created = await createRecipe(this.state.recipe)
+    console.log(created)
     this.setState({ created })
   }
 
   render() {
     const { recipe, created } = this.state
 
+    // console.log(recipe)
+
     if (created) {
-      return <Redirect to={`/recipes`} />
+      return <Redirect to={`/`} />
     }
     return (
       <>
         <Header />
         <div className="recipeCreate--wrapper">
           <form
-            autoComplete="off"
+            autocomplete="off"
             className="recipeCreate" onSubmit={this.handleSubmit}>
             <input
               className="recipeCreate-input"
               placeholder="recipe name"
-              value={this.state.recipe.name}
+              value={recipe.name}
               name='name'
               required
               autoFocus
@@ -70,14 +73,14 @@ class RecipeCreate extends Component {
             <input
               className="createimage-link"
               placeholder='Image Link'
-              value={this.state.recipe.imgURL}
+              value={recipe.imgURL}
               name='imgURL'
               required
               onChange={this.handleChange} />
             <input
               className="create-videoLink"
               placeholder='Video Link'
-              value={this.state.recipe.videoURL}
+              value={recipe.videoURL}
               name='videoURL'
               required
               onChange={this.handleChange} />
@@ -87,7 +90,7 @@ class RecipeCreate extends Component {
               rows={20}
               cols={78}
               placeholder='ingredients'
-              value={this.state.recipe.ingredients}
+              value={recipe.ingredients}
               name='ingredients'
               required
               onChange={this.handleChange} />
@@ -97,7 +100,7 @@ class RecipeCreate extends Component {
               rows={20}
               cols={20}
               placeholder='Equipment'
-              value={this.state.recipe.equipment}
+              value={recipe.equipment}
               name='equipment'
               required
               onChange={this.handleChange} />
@@ -107,63 +110,63 @@ class RecipeCreate extends Component {
               rows={20}
               cols={78}
               placeholder='Instructions'
-              value={this.state.recipe.instructions}
+              value={recipe.instructions}
               name='instructions'
               required
               onChange={this.handleChange} />
             <input
               className="create-cuisine"
               placeholder='Cuisine'
-              value={this.state.recipe.cuisine}
+              value={recipe.cuisine}
               name='cuisine'
               required
               onChange={this.handleChange} />
             <input
               className="create-cooktime"
               placeholder='Cooktime'
-              value={this.state.recipe.cooktime}
+              value={recipe.cooktime}
               name='cooktime'
               required
               onChange={this.handleChange} />
             <input
               className="create-difficulty"
               placeholder='Difficulty'
-              value={this.state.recipe.difficulty}
+              value={recipe.difficulty}
               name='difficulty'
               required
               onChange={this.handleChange} />
             <input
               className="create-diet"
               placeholder='Diet'
-              value={this.state.recipe.diet}
+              value={recipe.diet}
               name='diet'
               required
               onChange={this.handleChange} />
             <input
               className="create-cookingMethod"
               placeholder='CookingMethod'
-              value={this.state.recipe.cookingMethod}
+              value={recipe.cookingMethod}
               name='cookingMethod'
               required
               onChange={this.handleChange} />
             <input
               className="create-course"
               placeholder='Course'
-              value={this.state.recipe.course}
+              value={recipe.course}
               name='course'
               required
               onChange={this.handleChange} />
             <input
               className="create-serving"
               placeholder='Serving'
-              value={this.state.recipe.serving}
+              value={recipe.serving}
               name='serving'
               required
               onChange={this.handleChange} />
             <input
               className="create-keyword"
               placeholder='Keyword'
-              value={this.state.recipe.keyword}
+              value={recipe.keyword}
               name='keyword'
               required
               onChange={this.handleChange} />

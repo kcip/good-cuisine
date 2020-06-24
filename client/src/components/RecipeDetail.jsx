@@ -86,8 +86,8 @@ class RecipeDetail extends Component {
 
 
     return (<>
-       <Header />
-     <Search />
+      <Header />
+      <Search />
       <div className="name">
         <h2>{recipe.name}</h2>
       </div>
