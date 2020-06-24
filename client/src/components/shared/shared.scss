@@ -6,25 +6,49 @@
 }
 .header {
  background-color: #242423;
- height: 140px;
- display: flex;
- align-items: center;
- justify-content: space-between;
+    height: 140px;
+    display: grid;
+    grid-template-columns: 25px repeat(7, 1fr) 25px;
+    grid-template-rows: 1fr;
 }
 
+
 .header--logo {
- width: 130px;
- height: 60px;
+ grid-column: 5;
+ align-self: center;
+ justify-self: center;
+
+     & img {
+      height: 90px;
+     }
 }
 .header--login {
  @include fontStyles;
- margin-right: 20px;
+ //margin-right: 20px;
+}
+.header--create{
+ @include fontStyles;
+ //margin-right: 10px;
 }
 .nav {
  @include fontStyles;
- margin-left: 20px;
+ grid-column: 2;
+    align-self: center;
 }
+.header--links {
+ grid-column: 7/ span 2;
+    align-self: center;
+    display: flex;
+    justify-self: self-end;
 
+    a:first-child {
+     margin-right: 20px;
+    }
+
+ 
+  
+
+}
 //footer styles
 .footer {
 background-color: #242423;
