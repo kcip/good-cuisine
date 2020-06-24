@@ -51,10 +51,12 @@ class RecipeEdit extends Component {
   this.setState({ updated })
  }
 
- render() {
-
-  const { recipe, updated } = this.state
-
+  render() {
+   
+    const { recipe, updated } = this.state
+    
+    console.log(recipe);
+    
   if (updated) {
    return <Redirect to={`${this.props.match.params.id}`} />
   }
