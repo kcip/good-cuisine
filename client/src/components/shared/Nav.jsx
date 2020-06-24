@@ -3,7 +3,7 @@ import './shared.scss'
 const Nav = () => {
  return (
   <nav className="nav">
-   menu
+   Menu
   </nav>
  )
 }

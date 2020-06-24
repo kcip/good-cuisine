@@ -5,12 +5,14 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import useInputState from './hooks/useInputState'
 import useToggle from './hooks/useToggle'
+import SearchResults from './SearchResults'
 const Search = (props) => {
 
  const [search, updateSearch, resetSearch] = useInputState('')
  const [recipeSearch, setRecipeSearch] = useState('')
  const [searchModal, setSearchModal] = useToggle(false)
- const [isRendered, setRendered] = useToggle(false)
+ //const [isRendered, setRendered] = useToggle(false)
+ //const [isfilter, setIsFilter] = useState('')
  useEffect(() => {
   async function getData() {
    const response = await getRecipes()
@@ -18,12 +20,12 @@ const Search = (props) => {
    if (search) {
     searchResults = response.filter(i => i.name.toLowerCase().includes(search)) ||
      response.filter(i => i.cuisine.toLowerCase().includes(search))
+
    }
    setRecipeSearch(searchResults)
   }
   getData()
  }, [search])
-
 
  return (
 
@@ -42,7 +44,7 @@ const Search = (props) => {
      autoFocus
      autoComplete="off"
      onKeyPress={setSearchModal}
-    //onBlur={setSearchModal}
+     onBlur={setSearchModal, resetSearch}
     />
     {console.log(recipeSearch)}
    </form>
@@ -52,10 +54,13 @@ const Search = (props) => {
       <div className="searchModal--image">
        {/* <img src={elm.imgURL} /> */}
       </div>
+
+      {/* <SearchResults data={recipeSearch} /> */}
       <div className="searchModal--details">
        <p className="searchModal--details">{elm.name}</p>
        <p className="searchModal--details">{elm.course}</p>
       </div>
+
      </div>
 
     ))}
