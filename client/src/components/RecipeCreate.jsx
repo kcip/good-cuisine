@@ -1,5 +1,4 @@
 import React, { Component } from 'react'
-import Layout from './shared/Layout'
 import Header from './shared/Header'
 import Footer from './shared/Footer'
 import './recipeCreate.scss'
