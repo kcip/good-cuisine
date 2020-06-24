@@ -66,6 +66,12 @@ const Concierge = (props) => {
     </div>
    </div>
 
+   <div className="filterRecipes--text">
+    <h2>Filter recipes by</h2>
+   </div>
+
+
+
    <div className="concierge--filters">
     <div className="quick-link">
      <Link to={"/category/cooktime"}>

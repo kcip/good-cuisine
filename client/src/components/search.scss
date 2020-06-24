@@ -7,7 +7,10 @@
 .fontAwesomeIcon.search{
  margin-right: -25px;
  z-index: 20;
- 
+}
+.fontAwesomeIcon.clear {
+ margin-left: -25px;
+ z-index: 20;
 }
 .search-input {
  font-family: 'Roboto', sans-serif;
@@ -19,6 +22,9 @@
  padding: 0 0 0 35px;
  font-size: 20px;
  color: #767676;
+ @media only screen and (max-width: 650px){
+  width: 90vw;
+ }
 }
 // font-family: 'Nunito', sans-serif;
 // font-family: 'Roboto', sans-serif;
@@ -45,8 +51,18 @@ background: rgba(255, 255, 255, 0.9);
  right: 0;
  margin: auto;
  z-index: 10;
+ @media only screen and (max-width: 650px){
+  width: 90vw;
+  top: 125px;
+ }
 }
+.search--link {
+ width: 100%;
 
+  &:hover {
+   background: rgba(241, 241, 241, 0.9);
+  }
+}
 .searchModal--container{
  width: 100%;
  padding: 10px 0;
