@@ -23,7 +23,7 @@ function App() {
         <Route exact path="/category/:category/:subcategory">
           <SubcategoryPage />
         </Route>
-        <Route path='/:id' component={RecipeDetail} />
+        <Route exact path='/:id' component={RecipeDetail} />
         <Route exact path="/:id/edit" component={RecipeEdit} />
       </Switch>
     </div>

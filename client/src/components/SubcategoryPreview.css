@@ -17,6 +17,7 @@ a{
   font-size: 20px;
   justify-content: space-around;
   align-items: flex-start;
+
 }
 .sub-name{
   font-size: 30px;
@@ -35,6 +36,9 @@ a{
     justify-content: center;
   }
   .more{
+    align-self: center;
+  }
+  .sub-name{
     align-self: center;
   }
 }

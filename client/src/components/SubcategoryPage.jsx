@@ -4,7 +4,7 @@ import RecipeCard from './RecipeCard'
 import { getRecipes } from '../services/recipes'
 import Header from './shared/Header'
 import Footer from './shared/Footer'
-import "./SubcategoryPage.css"
+import "./SubcategoryPage.scss"
 import Search from './Search'
 
 class SubcategoryPage extends Component {
@@ -70,6 +70,28 @@ class SubcategoryPage extends Component {
           break
         case "Japanese":
           matchedRecipes = await allRecipes.filter(recipe => recipe.diet.includes("Japanese"))
+          break
+      }
+    }
+    else if (categoryName === "cookingmethod") {
+      switch (subcategoryName) {
+        case "Fry":
+          matchedRecipes = await allRecipes.filter(recipe => recipe.cookingMethod.includes("fry"))
+          break
+        case "Bake":
+          matchedRecipes = await allRecipes.filter(recipe => recipe.cookingMethod.includes("bake"))
+          break
+        case "Broil":
+          matchedRecipes = await allRecipes.filter(recipe => recipe.cookingMethod.includes("broil"))
+          break
+        case "Saute":
+          matchedRecipes = await allRecipes.filter(recipe => recipe.cookingMethod.includes("saute"))
+          break
+        case "Grill":
+          matchedRecipes = await allRecipes.filter(recipe => recipe.cookingMethod.includes("grill"))
+          break
+        case "Simmer":
+          matchedRecipes = await allRecipes.filter(recipe => recipe.cookingMethod.includes("simmer"))
           break
       }
     }
