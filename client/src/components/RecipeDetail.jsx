@@ -57,26 +57,34 @@ class RecipeDetail extends Component {
     const step = steps && steps.map((item, index) => {
       return (
         <div className="instruction">
-          <p>Step {index + 1} {item}</p>
+          <p>{item}</p>
+          <div className="number">
+            <h3>Step {index + 1} </h3>
+          </div>
         </div>
+
       )
     })
+
     const stuffs = recipe.ingredients && recipe.ingredients
     const stuff = stuffs && stuffs.map((item) => {
       return (
-        <div className="instruction">
-          <p> .  {item}</p>
+        <div className="ingredient">
+          <p>{item}</p>
         </div>
       )
     })
+
     const kitchens = recipe.equipment && recipe.equipment
     const kitchen = kitchens && kitchens.map((item) => {
       return (
         <div className="kitchen">
-          <p> .  {item}</p>
+          <p>  {item}</p>
         </div>
       )
     })
+
+
     return (<>
        <Header />
      <Search />
@@ -91,14 +99,17 @@ class RecipeDetail extends Component {
         <button class="tablinks" onClick={() => { this.toggles("ingredients") }}>Ingredients</button>
         <button class="tablinks" onClick={() => { this.toggles("equipment") }}>Equipment</button>
         {this.state.selector == "ingredients" ?
-          <div className="in">
-            {stuff}
+        
+          <div>
+           <p> {stuff}</p>
           </div> :
-          <div className="equp">
+          <div >
             {kitchen}
-          </div>
+            </div>
+          
+         
         }
-      </div>
+        </div>
       <div className="instructions">
         {step}
       </div>
