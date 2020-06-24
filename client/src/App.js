@@ -13,20 +13,21 @@ function App() {
  return (
   <div className="app">
 
-   <Switch >
-    <Route exact path='/' component={Home} />
-    <Route exact path='/login' component={Login} />
-    <Route path="/recipecreate" component={RecipeCreate} />
-    <Route exact path='/category/:category'>
-     <CategoryPage />
-    </Route>
-    <Route exact path="/category/:category/:subcategory">
-     <SubcategoryPage />
-    </Route>
-    <Route exact path='/:id' component={RecipeDetail} />
-    <Route exact path="/:id/edit" component={RecipeEdit} />
-   </Switch>
-  </div>
+
+      <Switch >
+        <Route exact path='/' component={Home} />
+        <Route exact path='/login' component={Login} />
+        <Route path="/recipecreate" component={RecipeCreate} />
+        <Route exact path='/category/:category'>
+          <CategoryPage />
+        </Route>
+        <Route exact path="/category/:category/:subcategory">
+          <SubcategoryPage />
+        </Route>
+        <Route exact path='/:id' component={RecipeDetail} />
+        <Route exact path="/:id/edit" component={RecipeEdit} />
+      </Switch>
+    </div>
 
 
  );

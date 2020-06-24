@@ -71,9 +71,30 @@ export default class SubcategoryPreview extends Component {
           break
       }
     }
+    else if (categoryName === "cookingmethod") {
+      switch (subcategoryName) {
+        case "Fry":
+          matchedRecipes = await allRecipes.filter(recipe => recipe.cookingMethod.includes("fry"))
+          break
+        case "Bake":
+          matchedRecipes = await allRecipes.filter(recipe => recipe.cookingMethod.includes("bake"))
+          break
+        case "Broil":
+          matchedRecipes = await allRecipes.filter(recipe => recipe.cookingMethod.includes("broil"))
+          break
+        case "Saute":
+          matchedRecipes = await allRecipes.filter(recipe => recipe.cookingMethod.includes("saute"))
+          break
+        case "Grill":
+          matchedRecipes = await allRecipes.filter(recipe => recipe.cookingMethod.includes("grill"))
+          break
+        case "Simmer":
+          matchedRecipes = await allRecipes.filter(recipe => recipe.cookingMethod.includes("simmer"))
+          break
+      }
+    }
 
-    console.log(matchedRecipes)
-    console.log(matchedRecipes.length)
+    // console.log(matchedRecipes)
 
     let names = []
     let imgURLs = []

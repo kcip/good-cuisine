@@ -51,6 +51,14 @@ class CategoryPage extends Component {
       let subcategories = ["Vegetarian", "Japanese"]
       this.setState({ subcategories })
     }
+    else if (categoryName === "healthy") {
+      let subcategories = ["Vegetarian", "Japanese"]
+      this.setState({ subcategories })
+    }
+    else if (categoryName === "cookingmethod") {
+      let subcategories = ["Bake", "Broil", "Fry", "Grill", "Saute", "Simmer"]
+      this.setState({ subcategories })
+    }
 
 
   }
@@ -58,6 +66,9 @@ class CategoryPage extends Component {
 
   render() {
     let categoryName = this.state.categoryName
+    if (categoryName === "cookingmethod") {
+      categoryName = "Cooking method"
+    }
 
     return (
       <>

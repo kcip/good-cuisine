@@ -8,40 +8,62 @@ import dinnerImg from '../resources/dinner.jpeg'
 //import ConciergeList from './ConciergeList'
 const Concierge = (props) => {
 
- const [recipes, setRecipes] = useState([])
- const [quick, setQuick] = useState([])
- const [easy, setEasy] = useState([])
- const [cusine, setCuisine] = useState([])
- const [course, setCourse] = useState([])
+  const [recipes, setRecipes] = useState([])
+  const [quick, setQuick] = useState([])
+  const [easy, setEasy] = useState([])
+  const [cusine, setCuisine] = useState([])
+  const [course, setCourse] = useState([])
 
- useEffect(() => {
-  async function getData() {
-   const response = await getRecipes()
-   setRecipes(response)
-  }
+  useEffect(() => {
+    async function getData() {
+      const response = await getRecipes()
+      setRecipes(response)
+    }
 
-  getData()
- }, [])
-
-
- useEffect(() => {
-  const setFilter = async () => {
-   const quickRecipes = await recipes.filter(recipe => recipe.cooktime <= '30')
-   const difficultyRecipes = await recipes.filter(recipe => recipe.difficulty.toLowerCase() === 'easy')
-   const americanRecipes = await recipes.filter(recipe => recipe.cuisine.toLowerCase() === 'american')
-   const courseRecipes = await recipes.filter(recipe => recipe.course.toLowerCase() === 'dinner')
-   setQuick(quickRecipes)
-   setEasy(difficultyRecipes)
-   setCuisine(americanRecipes)
-   setCourse(courseRecipes)
-  }
-  setFilter()
- }, [recipes])
+    getData()
+  }, [])
 
 
- return (
-  <>
-   <div className="concierge">
+  useEffect(() => {
+    const setFilter = async () => {
+      const quickRecipes = await recipes.filter(recipe => recipe.cooktime <= '30')
+      const difficultyRecipes = await recipes.filter(recipe => recipe.difficulty.toLowerCase() === 'easy')
+      const americanRecipes = await recipes.filter(recipe => recipe.cuisine.toLowerCase() === 'american')
+      const courseRecipes = await recipes.filter(recipe => recipe.course.toLowerCase() === 'dinner')
+      setQuick(quickRecipes)
+      setEasy(difficultyRecipes)
+      setCuisine(americanRecipes)
+      setCourse(courseRecipes)
+    }
+    setFilter()
+  }, [recipes])
+
+
+  return (
+    <>
+      <div className="concierge">
+        <Link to={"/category/cooktime/30 minutes or less"} className="page-links">
+          <div className="concierge--quick quick-link" style={{ backgroundImage: `url(${quickImg})` }}>
+            {/* <Link to="/concierge/quick">Quick</Link> */}
+            Quick
+        </div>
+        </Link>
+        <Link to={"/category/difficulty/Easy"} className="page-links">
+          <div className="concierge--easy quick-link" style={{ backgroundImage: `url(${easyImg})` }}>
+            Easy
+        </div>
+        </Link>
+        <Link to={"/category/cuisine/American"} className="page-links">
+          <div className="concierge--cuisine quick-link" style={{ backgroundImage: `url(${americanImg})` }}>
+            American
+          </div>
+        </Link>
+        <Link to={"/category/course/Dinner"} className="page-links">
+          <div className="concierge--cuisine quick-link" style={{ backgroundImage: `url(${dinnerImg})` }}>
+            Dinner
+         </div>
+        </Link>
+      </div>
 
     <div className="concierge--quick quick-link" style={{ backgroundImage: `url(${quickImg})` }}>
      {/* <Link to="/concierge/quick">Quick</Link> */}
@@ -106,6 +128,7 @@ const Concierge = (props) => {
    </div>
   </>
  )
+
 
 }
 export default withRouter(Concierge)

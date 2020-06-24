@@ -20,7 +20,7 @@ export const getRecipe = async id => {
 
 export const createRecipe = async recipe => {
   try {
-    const response = await api.recipe('/recipes', recipe)
+    const response = await api.post('/recipes', recipe)
     return response.data
   } catch (error) {
     throw error
