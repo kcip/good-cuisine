@@ -1,18 +1,19 @@
 import React, { useState, useEffect } from 'react'
+import { Link } from 'react-router-dom';
 import './search.scss'
 import { getRecipes } from '../services/recipes.js'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
+import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 import useInputState from './hooks/useInputState'
 import useToggle from './hooks/useToggle'
-import SearchResults from './SearchResults'
+//import SearchResults from './SearchResults'
 const Search = (props) => {
 
  const [search, updateSearch, resetSearch] = useInputState('')
  const [recipeSearch, setRecipeSearch] = useState('')
  const [searchModal, setSearchModal] = useToggle(false)
- //const [isRendered, setRendered] = useToggle(false)
- //const [isfilter, setIsFilter] = useState('')
+
  useEffect(() => {
   async function getData() {
    const response = await getRecipes()
@@ -27,10 +28,12 @@ const Search = (props) => {
   getData()
  }, [search])
 
+
+
  return (
 
   <div className="search-container">
-   <form className="search-form" onSubmit={(e) => props.onSubmit(e)}>
+   <form className="search-form" onSubmit={(e) => props.onSubmit(e), resetSearch}>
     <span className="fontAwesomeIcon search">
      <FontAwesomeIcon icon={faSearch} color="#767676" />
     </span>
@@ -44,25 +47,26 @@ const Search = (props) => {
      autoFocus
      autoComplete="off"
      onKeyPress={setSearchModal}
-     onBlur={setSearchModal, resetSearch}
+    //onBlur={resetSearch}
     />
-    {console.log(recipeSearch)}
+    <span className="fontAwesomeIcon clear">
+     <FontAwesomeIcon icon={faTimesCircle} color="#767676" />
+    </span>
    </form>
    {searchModal ? <div className="searchModal">
     {recipeSearch && recipeSearch.map((elm, i) => (
-     <div className="searchModal--container">
-      <div className="searchModal--image">
-       {/* <img src={elm.imgURL} /> */}
+     <Link to={`/${elm._id}`} className="search--link">
+      <div className="searchModal--container">
+       <div className="searchModal--image">
+        {/* <img src={elm.imgURL} /> */}
+       </div>
+       <div className="searchModal--details">
+        <p className="searchModal--details">{elm.name}</p>
+        <p className="searchModal--details">{elm.course}</p>
+       </div>
+
       </div>
-
-      {/* <SearchResults data={recipeSearch} /> */}
-      <div className="searchModal--details">
-       <p className="searchModal--details">{elm.name}</p>
-       <p className="searchModal--details">{elm.course}</p>
-      </div>
-
-     </div>
-
+     </Link>
     ))}
    </div> : !searchModal}
   </div>
