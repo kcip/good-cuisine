@@ -96,8 +96,8 @@ class RecipeDetail extends Component {
           <iframe src={recipe.videoURL} width="1080px" height="607px"></iframe>
         </div>
 
-        <button class="tablinks" onClick={() => { this.toggles("ingredients") }}>Ingredients</button>
-        <button class="tablinks" onClick={() => { this.toggles("equipment") }}>Equipment</button>
+        <button className="tablinks" onClick={() => { this.toggles("ingredients") }}>Ingredients</button>
+        <button className="tablinks" onClick={() => { this.toggles("equipment") }}>Equipment</button>
         {this.state.selector == "ingredients" ?
         
           <div>
