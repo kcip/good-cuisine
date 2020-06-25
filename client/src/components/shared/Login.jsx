@@ -1,11 +1,15 @@
 import React from "react"
 import { Link } from 'react-router-dom'
 
+import Footer from './Footer'
+import Header from './Header'
+
 
 const Form = () => {
 
   return (
     <div className='Login'>
+      <Header />
       <form className="username">
         <label htmlFor="username">Username</label>
         <input type="text" name="username" placeholder="username" />
@@ -18,6 +22,7 @@ const Form = () => {
       <Link to='/'>
         <label htmlFor="home" className="home">home</label>
       </Link>
+      <Footer />
     </div>
   )
 }
