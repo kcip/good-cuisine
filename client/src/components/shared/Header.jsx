@@ -14,9 +14,6 @@ const Header = () => {
     <img src={logo} alt="good cusine logo" />
    </Link>
    <div className="header--links">
-    <Link to="/recipecreate">
-     <p className="header--create">Create Recipe</p>
-    </Link>
     <Link to="/Login">
      <p className="header--login">Login</p>
     </Link>

@@ -11,6 +11,11 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Concierge from './Concierge';
 import ConciergeList from './ConciergeList.jsx';
+import img1 from '../resources/noodles.png'
+import img2 from '../resources/steak.png'
+import img3 from '../resources/strawberries.png'
+import img4 from '../resources/burger.jpeg'
+import img5 from '../resources/pork.png'
 export default class Home extends Component {
  constructor() {
   super()
@@ -46,24 +51,34 @@ export default class Home extends Component {
  }
  render() {
   const settings = {
+   arrows: false,
    dots: true,
    infinite: true,
    lazyload: true,
    speed: 1500,
    slidesToShow: 1,
    slidesToScroll: 1,
-   autoplay: true
+   //autoplay: true
   }
-  const state = this.state.recipes;
+  //const state = this.state.recipes;
   return (
    <>
     <div className="allrecipes">
      <Header />
      <Search />
      <Slider {...settings}>
-      {state && state.slice(10, 14).map((recipe, i) => (
-       <img className="slick-images" src={recipe.imgURL} alt={recipe.name} key={recipe._id} />
-      ))}
+      <div className="sliderContainer">
+       <img className="slider--image" src={img2} alt="steak" />
+      </div>
+      <div className="sliderContainer">
+       <img className="slider--image" src={img1} alt="noodles image" />
+      </div>
+      <div className="sliderContainer">
+       <img className="slider--image" src={img3} alt="strawberries" />
+      </div>
+      <div className="sliderContainer">
+       <img className="slider--image" src={img5} alt="pork" />
+      </div>
      </Slider>
     </div>
     <TimeOfDay />
