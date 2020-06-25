@@ -1,10 +1,10 @@
 import React, { Component } from 'react'
-import Layout from './shared/Layout'
 import { getRecipe, deleteRecipe } from '../services/recipes'
 import Header from './shared/Header';
 import Footer from './shared/Footer'
 import Search from '../components/Search'
 import { Link } from 'react-router-dom'
+import image from '../resources/image.png'
 import './recipedetail.scss'
 
 class RecipeDetail extends Component {
@@ -57,10 +57,11 @@ class RecipeDetail extends Component {
     const step = steps && steps.map((item, index) => {
       return (
         <div className="instruction">
-          <p>{item}</p>
           <div className="number">
-            <h3>Step {index + 1} </h3>
+            <h3>STEP {index + 1} </h3>
           </div>
+          <p>{item}</p>
+          
         </div>
 
       )
@@ -70,7 +71,7 @@ class RecipeDetail extends Component {
     const stuff = stuffs && stuffs.map((item) => {
       return (
         <div className="ingredient">
-          <p>{item}</p>
+          <p>&#8226;{item}</p>
         </div>
       )
     })
@@ -79,7 +80,7 @@ class RecipeDetail extends Component {
     const kitchen = kitchens && kitchens.map((item) => {
       return (
         <div className="kitchen">
-          <p>  {item}</p>
+          <p>&#8226;{item}</p>
         </div>
       )
     })
@@ -91,20 +92,19 @@ class RecipeDetail extends Component {
       <div className="name">
         <h2>{recipe.name}</h2>
       </div>
-      <div className="recipe-detail">
-        <div className="vid">
-          <iframe src={recipe.videoURL} width="1080px" height="607px"></iframe>
+      <div className="vid">
+          <iframe src={recipe.videoURL} width="1080px" height="607px"  />
         </div>
-
-        <button className="tablinks" onClick={() => { this.toggles("ingredients") }}>Ingredients</button>
-        <button className="tablinks" onClick={() => { this.toggles("equipment") }}>Equipment</button>
+      <div className="recipe-detail">
+        <button className="tab tabby" onClick={() => { this.toggles("ingredients") }}>Ingredients</button>
+        <button className="tab tabs" onClick={() => { this.toggles("equipment") }}>Equipment</button>
         {this.state.selector == "ingredients" ?
         
-          <div>
-           <p> {stuff}</p>
+          <div className='stuff'>
+           <p className="p"> {stuff}</p>
           </div> :
-          <div >
-            {kitchen}
+          <div className='kitchens'>
+           <p className="ps"> {kitchen}</p>
             </div>
           
          
