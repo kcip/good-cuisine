@@ -79,7 +79,7 @@ class CategoryPage extends Component {
           </div>
 
           <div className="category-name">
-            {categoryName.charAt(0).toUpperCase() + categoryName.slice(1)}
+            {categoryName.toUpperCase()}
           </div>
           <div className="subcategories">
             {this.state.subcategories.map((subcategoryName, i) =>

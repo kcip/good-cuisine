@@ -105,6 +105,7 @@ class SubcategoryPage extends Component {
   }
 
   render() {
+    let subcategory = this.props.match.params.subcategory
 
     return (
       <div>
@@ -115,7 +116,7 @@ class SubcategoryPage extends Component {
 
         <div className="recipes">
           <div className="subcategory-name">
-            {this.props.match.params.subcategory}
+            {subcategory.toUpperCase()}
           </div>
           <div className="recipe-cards">
             {this.state.matchedRecipes.map((recipe, index) =>
