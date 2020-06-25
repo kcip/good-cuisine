@@ -9,13 +9,16 @@
 .recipeCreate {
  display: flex;
  flex-direction: column;
- width: 50vw;
+ max-width: 600px;
  justify-self: center;
  padding: 40px;
  background: #f9f9f9;
  margin: 30px;
  box-shadow: 3px 5px 10px rgba(0,0,0,0.3);
  border-radius: 5px;
+ @media only screen and (max-width: 899px){
+  max-width: 80vw;
+ }
 
   & input, & textarea {
    border: none;
@@ -37,7 +40,7 @@
  background: #333;
  padding: 20px 30px;
  color: #fff;
- width: 40%;
+ width: 100%;
  border-radius: 5px;
  font-size: 16px;
  margin: 10px 0;
