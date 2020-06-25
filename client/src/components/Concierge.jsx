@@ -42,64 +42,74 @@ const Concierge = (props) => {
  return (
   <>
    <div className="concierge">
-
-    <div className="concierge--quick quick-link" style={{ backgroundImage: `url(${quickImg})` }}>
-     {/* <Link to="/concierge/quick">Quick</Link> */}
-     <Link to={"/category/cooktime/30 minutes or less"} className="page-links">
-      Quick
-     </Link>
-    </div>
-    <div className="concierge--easy quick-link" style={{ backgroundImage: `url(${easyImg})` }}>
-     <Link to={"/category/difficulty/Easy"} className="page-links">
-      Easy
-           </Link>
-    </div>
-    <div className="concierge--cuisine quick-link" style={{ backgroundImage: `url(${americanImg})` }}>
-     <Link to={"/category/cuisine/American"} className="page-links">
-      American
-           </Link>
-    </div>
-    <div className="concierge--cuisine quick-link" style={{ backgroundImage: `url(${dinnerImg})` }}>
-     <Link to={"/category/course/Dinner"} className="page-links">
+    <Link to={"/category/cooktime/30 minutes or less"} className="page-links" >
+     <div className="concierge--quick quick-link" style={{ backgroundImage: `url(${quickImg})` }}>
+      {/* <Link to="/concierge/quick">Quick</Link> */}
+      <h3>Quick</h3>
+     </div>
+    </Link>
+    <Link to={"/category/difficulty/Easy"} className="page-links">
+     <div className="concierge--easy quick-link" style={{ backgroundImage: `url(${easyImg})` }}>
+      <h3>Easy</h3>
+     </div>
+    </Link>
+    <Link to={"/category/cuisine/American"} className="page-links">
+     <div className="concierge--cuisine quick-link" style={{ backgroundImage: `url(${americanImg})` }}>
+      <h3>American</h3>
+     </div>
+    </Link>
+    {/* <Link to={"/category/course/Dinner"} className="page-links">
+     <div className="concierge--cuisine quick-link" style={{ backgroundImage: `url(${dinnerImg})` }}>
       Dinner
-           </Link>
-    </div>
+         </div>
+    </Link> */}
+   </div>
+
+   <div className="filterRecipes--text">
+    <h2>Filter recipes by</h2>
    </div>
 
    <div className="concierge--filters">
     <div className="quick-link">
      <Link to={"/category/cooktime"}>
-      Time
-           </Link>
+      <h3>Time</h3>
+     </Link>
     </div>
-    <div className="quick-link">Cooking Method</div>
+    {/* <div className="quick-link">Cooking Method</div> */}
     <div className="quick-link">
      <Link to={"/category/healthy"}>
-      Healthy
-           </Link>
+      <h3>Healthy</h3>
+     </Link>
     </div>
     <div className="quick-link">
      <Link to={"/category/serving"}>
-      Serving
-           </Link>
+      <h3>Serving</h3>
+     </Link>
     </div>
     <div className="quick-link">
      <Link to={"/category/difficulty"}>
-      Difficulty
-           </Link>
+      <h3>Difficulty</h3>
+     </Link>
     </div>
     <div className="quick-link">
      <Link to={"/category/cuisine"}>
-      Cuisine
-           </Link>
+      <h3>Cuisine</h3>
+     </Link>
     </div>
     <div className="quick-link">
      <Link to={"/category/course"}>
-      Course
-           </Link></div>
+      <h3>Course</h3>
+     </Link>
+    </div>
+
+
+
    </div>
+
+
   </>
  )
+
 
 }
 export default withRouter(Concierge)
