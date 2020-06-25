@@ -11,11 +11,10 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import Concierge from './Concierge';
 import ConciergeList from './ConciergeList.jsx';
-import img1 from '../resources/noodles.png'
-import img2 from '../resources/steak.png'
-import img3 from '../resources/strawberries.png'
-import img4 from '../resources/burger.jpeg'
-import img5 from '../resources/pork.png'
+import img1 from '../resources/noodles.jpg'
+import img2 from '../resources/steak.jpg'
+import img3 from '../resources/strawberries.jpg'
+import img5 from '../resources/pork.jpg'
 export default class Home extends Component {
  constructor() {
   super()
