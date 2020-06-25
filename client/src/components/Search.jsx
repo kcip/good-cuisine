@@ -7,6 +7,8 @@ import { faSearch } from '@fortawesome/free-solid-svg-icons'
 import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 import useInputState from './hooks/useInputState'
 import useToggle from './hooks/useToggle'
+
+
 //import SearchResults from './SearchResults'
 const Search = (props) => {
 
@@ -21,7 +23,6 @@ const Search = (props) => {
    if (search) {
     searchResults = response.filter(i => i.name.toLowerCase().includes(search)) ||
      response.filter(i => i.cuisine.toLowerCase().includes(search))
-
    }
    setRecipeSearch(searchResults)
   }

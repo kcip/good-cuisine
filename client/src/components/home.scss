@@ -2,12 +2,33 @@
 .slick-track{
  height: 50vh;
 }
+.slick-slider {
+ max-width: 80vw;
+ margin: 0 auto;
+
+ @media only screen and (min-width: 1500px){
+  max-width: 1013px;
+ }
+}
+
+.sliderContainer {
+ width: 100%;
+ height: 100%;
+}
 div >.slick-images  {
  //background-color: #333;
 height: 50vh;
 object-fit: contain;
 }
+.slider--image {
+ border-radius: 5px;
+ width: 100%;
+ height: 100%;
+}
 
+.slick-list {
+ border-radius: 5px;
+}
 .concierge,
 .concierge--filters {
  display: flex;
@@ -18,10 +39,11 @@ object-fit: contain;
  align-items: center;
  max-width: 65vw;
  margin: auto;
- padding: 30px 0;
+ padding: 5px 0 40px 0;
  transition: all 500ms ease-in-out;
  @media only screen and (min-width: 650px){
-  max-width: 85vw;
+  // max-width: 90vw;
+  max-width: 1200px;
  }
 
 }
@@ -49,8 +71,8 @@ object-fit: contain;
 .quick-link{
  position: relative;
  font-family: 'Roboto', sans-serif;
- width: 340px;
- height: 200px;
+ width: 330px;
+ height: 220px;
  display: flex;
  flex-direction: column;
  justify-content: center;
@@ -67,11 +89,6 @@ object-fit: contain;
  &:hover {
   transform: scale(0.9)
  }
- // @media only screen and (min-width: 650px){
- //  width: 250px;
- //  height: 200px;
- // }
- 
 
   &::after {
    content: '';
@@ -82,8 +99,12 @@ object-fit: contain;
    left: 0;
    border-radius: 10px;
    background-color: rgba(0,0,0,0.3);
-   mix-blend-mode: screen;
    z-index: 1;
+  }
+
+  h3 {
+   z-index: 3;
+   font-size: 25px;
   }
 
  
@@ -98,13 +119,28 @@ object-fit: contain;
  text-shadow: 2px 2px 5px rgba(0,0,0,0.9);
 }
 .filterRecipes--text{
+ margin-top: 20px;
+ margin: 0 auto;
+ display: flex;
+ justify-content: center;
+ // justify-content: flex-start;
+ width: 80vw;
+ padding: 20px 0 0 0;
+//  @media only screen and (max-width: 1115px){
+//   justify-content: center;
+// }
+
   h2 {
+   padding-left: 5px;
    font-family: 'Nunito', sans-serif;
    font-weight: bold;
-   text-align: center;
+   // text-align: center;
    font-size: 40px;
    @media only screen and (max-width: 650px){
     font-size: 30px;
    }
+   @media only screen and (max-width: 1115px){
+    padding-left: unset;
+  }
   }
 }

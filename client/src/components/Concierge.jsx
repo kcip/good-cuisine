@@ -42,27 +42,27 @@ const Concierge = (props) => {
  return (
   <>
    <div className="concierge">
-    <Link to={"/category/cooktime/30 minutes or less"} className="page-links">
+    <Link to={"/category/cooktime/30 minutes or less"} className="page-links" >
      <div className="concierge--quick quick-link" style={{ backgroundImage: `url(${quickImg})` }}>
       {/* <Link to="/concierge/quick">Quick</Link> */}
-            Quick
+      <h3>Quick</h3>
      </div>
     </Link>
     <Link to={"/category/difficulty/Easy"} className="page-links">
      <div className="concierge--easy quick-link" style={{ backgroundImage: `url(${easyImg})` }}>
-      Easy
-        </div>
+      <h3>Easy</h3>
+     </div>
     </Link>
     <Link to={"/category/cuisine/American"} className="page-links">
      <div className="concierge--cuisine quick-link" style={{ backgroundImage: `url(${americanImg})` }}>
-      American
-          </div>
+      <h3>American</h3>
+     </div>
     </Link>
-    <Link to={"/category/course/Dinner"} className="page-links">
+    {/* <Link to={"/category/course/Dinner"} className="page-links">
      <div className="concierge--cuisine quick-link" style={{ backgroundImage: `url(${dinnerImg})` }}>
       Dinner
          </div>
-    </Link>
+    </Link> */}
    </div>
 
    <div className="filterRecipes--text">
@@ -72,33 +72,33 @@ const Concierge = (props) => {
    <div className="concierge--filters">
     <div className="quick-link">
      <Link to={"/category/cooktime"}>
-      Time
+      <h3>Time</h3>
      </Link>
     </div>
-    <div className="quick-link">Cooking Method</div>
+    {/* <div className="quick-link">Cooking Method</div> */}
     <div className="quick-link">
      <Link to={"/category/healthy"}>
-      Healthy
+      <h3>Healthy</h3>
      </Link>
     </div>
     <div className="quick-link">
      <Link to={"/category/serving"}>
-      Serving
+      <h3>Serving</h3>
      </Link>
     </div>
     <div className="quick-link">
      <Link to={"/category/difficulty"}>
-      Difficulty
+      <h3>Difficulty</h3>
      </Link>
     </div>
     <div className="quick-link">
      <Link to={"/category/cuisine"}>
-      Cuisine
+      <h3>Cuisine</h3>
      </Link>
     </div>
     <div className="quick-link">
      <Link to={"/category/course"}>
-      Course
+      <h3>Course</h3>
      </Link>
     </div>
 
