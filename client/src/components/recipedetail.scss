@@ -1,26 +1,43 @@
+
+
 .vid{
   display: flex;
   justify-content: center;
 }
-.instruction{
-display: flex;
-align-content: center;
-width: 661px;
-margin: 2em;
+.instruction { 
+  display: grid;  
+  grid-template-rows: 50px 1fr; 
+  width: 661px;
+margin: 3em;
   font-size: 20px;
   font-weight: normal;
   font-stretch: normal;
   font-style: normal;
   line-height: 1.4;
   letter-spacing: normal;
- 
 }
+
 
 .instructions{
+  margin: 0 auto;
+  padding: 5em;
 
-  padding: 3em;
 
 }
+.recipe-detail{
+  display: grid;
+  align-items: center;
+  margin: 20px auto;
+  border-radius: 20px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: 50px 1fr;
+  width: 500px;
+  background: rgb(241,241,242);
+  // height: 300px auto;
+ height: 500px;
+
+}
+
 
 .name{
   font-size: 40px;
@@ -29,26 +46,109 @@ margin: 2em;
   font-style: normal;
 }
 
-.tablinks {
-  background-color: inherit;
-  float: left;
+.tab {
+border: none;
+outline: none;
+height: 100%;
+font-weight: 900;
+font-size: 16px;
+
+
+
+
+}
+.tabs{
+  background: rgb(206,208,206);
+  border-top-right-radius: 23px;
+  
+
+}
+.tabby{
+  border-top-left-radius: 23px;
+}
+
+.p{
+ padding: 0px 0px 0px 20px
+
+}
+
+
+.ps{
+  padding: 0px 0px 0px 20px
+ 
+ }
+
+
+.kitchens   {
+  background:  rgb(206,208,206);
+  height: 100%;
+  width: 100%;
+  grid-column: 1/-1;
+
+}
+
+
+
+
+
+
+.number { 
+  position: relative;
+  grid-row: 1;
+
+&:before{
+  content: "";
+  position: absolute;
+  width: 77px;
+  height: 10px;
+  bottom: 15px;
+  left: 0;
+  background-color:  rgb(114,202, 195);
+  
+}
+
+}
+
+
+
+.edit-button{
+  background-color: rgb(114,202, 195);
   border: none;
-  outline: none;
-  cursor: pointer;
-  padding: 14px 16px;
+  color: black;
+  padding: 3px 10px;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.1;
   transition: 0.3s;
-}
-.tablinks:hover {
-  background-color: #ddd;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
 }
 
-.tablinks.active {
-  background-color: #ccc;
+.delete-button{
+  background-color: rgb(114,202, 195);
+  border: none;
+  color: black;
+  padding: 3px 10px;
+  border-radius: 20%;
+  text-align: center;
+  font-size: 16px;
+  margin: 4px 2px;
+  opacity: 0.1;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
 }
-.in {
+.button-container{
+  display: flex;
+  justify-content: center;
+}
 
-  width: 1080px;
-  padding: 6px 12px;
-  border: 1px solid #ccc;
-  border-top: none;
-}
+
+.edit-button:hover {opacity: 1}
+
+.delete-button:hover {opacity: 1}
+
