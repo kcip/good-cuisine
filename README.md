@@ -1,13 +1,11 @@
 # Food Recipe App
 # PROJECT 3 PLANNING WORKSHEET README TEMPLATE <!-- omit in toc -->
 
-> The Project Planning section **should be completed** before you complete this project to ensure your team is aligned as you kick off. We recommend that you use Trello or Github Projects to create a project plan and assign tasks to each member of the team.
-
 ## Overview
-
+(http://slow-potato.surge.sh/)
 **goodCuisine** 
 
-Add your project description.
+Good Cuisine is a food recipe website to make your life easier in the kitchen. The website offers suggestions based on time, cuisine, method of cooking & ease of cooking. 
 
 ### Team Members
 - [Christian](https://github.com/chris-m18)
@@ -23,19 +21,19 @@ Team values and expectations can be found on our project's [Group Expectation Se
 
 ## Sprint 1
 
-> Sprint 1 should result in a well-planned and easily-communicated project, ensuring that the client's deliverable will be achievable and meet specifications within the time frame estimated.
-
-_The **Project Title** lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus dapibus fermentum risus vitae bibendum. Integer vel ipsum mollis odio sollicitudin ornare eu vel ex. In quis fringilla velit, ac maximus quam. Etiam eget placerat neque. Aenean faucibus sem non nisi lobortis ullamcorper._
+> Implement basic CRUD features.
+> Make website match UX design
+> Mobile responsive
+> Meet matrix priorities
 
 <br>
 
 ### Goals
 
-- _Lorem ipsum, dolor sit amet,_
-- _consectetur adipiscing elit._
-- _Phasellus dapibus fermentum risus vitae bibendum._
-- _Integer vel ipsum mollis odio sollicitudin ornare eu vel ex._
-- _etc._
+- _CRUD,_
+- _Make it as close as possible as the UX design._
+- _For Sprint One, try to priortize features based on SEI & UX team priority matrix._
+- _Mobile responsive._
 
 <br>
 
@@ -43,12 +41,12 @@ _The **Project Title** lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 
 #### Wireframes
 
-> Use the Wireframes section to display desktop and mobile views. Include the link(s) to the mockups from your UX team here.
+> https://www.figma.com/proto/sEf3KwkH9VsJH7swFQgGOo/iPhone?node-id=222%3A6142&scaling=min-zoom&hotspot-hints=0
 
 
 #### Component Hierarchy
 
-> Use this section to define your React components and the data architecture of your app. Suggestion: Use [Whimsical](https://whimsical.com/) to create your diagram.
+>  https://whimsical.com/8MGgACKZvbTFPS6nyuxLSP
 
 <br>
 
@@ -56,11 +54,44 @@ _The **Project Title** lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 
 #### Database Schema 
 
-> Use this section to outline the schema for your database models.
+`
+const mongoose = require('mongoose')
+const Schema = mongoose.Schema
+
+const Recipe = new Schema(
+  {
+    name: { type: String, required: true },
+    imgURL: { type: String, required: true },
+    videoURL:{ type: String, required: false},
+    ingredients: [{ type: String, required: true }],
+    equipment:[{ type: String, required: true }],
+    instructions: [{ type: String, required: true }],
+    cuisine: { type: String, required: true },
+    cooktime: { type: String, required: true },
+    difficulty: { type: String, required: true },
+    diet: [{ type: String, required: false }],
+    cookingMethod:[{ type: String, required: false }],
+    course:{ type: String, required: true },
+    serving:{ type: String, required: true },
+    keyword:[{ type: String, required: false }],
+    saved: false
+  },
+  { timestamps: true }
+)
+
+module.exports = mongoose.model('recipes', Recipe)
+`
 
 #### Express Routes
 
-> Use this section to anticipate the routes you need to define in your Express server.
+ `
+ router.get('/recipes', controllers.getRecipes)
+router.get('/recipes/:id', controllers.getRecipe)
+router.post('/recipes', controllers.createRecipe)
+router.put('/recipes/:id', controllers.updateRecipe)
+router.delete('/recipes/:id', controllers.deleteRecipe)
+ 
+ `
 
 <br>
 
@@ -70,11 +101,13 @@ _The **Project Title** lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 
 |    Library     | Description                                |
 | :------------: | :----------------------------------------- |
-|     React      | _Lorem ipsum dolor sit amet, consectetur._ |
-|  React Router  | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Express     | _Lorem ipsum dolor sit amet, consectetur._ |
+|     React      | _Frontend to make design as close as possible to UX design._ |
+|  React Router  | _Routes routes_ |
+|    Express     | _._ |
 | Express Router | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Mongoose    | _Lorem ipsum dolor sit amet, consectetur._ |
+|    Mongoose    | _._ |
+|    Mongoose    | _._ |
+|    Mongoose    | _._ |
 
 <br>
 
@@ -82,16 +115,18 @@ _The **Project Title** lorem ipsum dolor sit amet, consectetur adipiscing elit. 
 
 ## Plan Your Next Sprint
 
-> Use this section to document ideas you've had that would be fun (or necessary) for your next sprint. This will be helpful when you return to your project after graduation!
+> Filter by category
+> Login
+
 
 ***
 
 ## Code Issues & Resolutions
 
-> Use this section to document and keep track of all major issues encountered and their resolution, if you'd like.
+> We has a few small Git issues, but nothing major.
 
 ***
 
 ## Change Log
 
-> Use this section to document and keep track of any changes that need to be made to your planned Sprint and provide reasons.
+> We made no changes. We were able to implement all the features that were discussed with the UX team in the matrix.
