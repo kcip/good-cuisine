@@ -20,14 +20,14 @@ export const getRecipe = async id => {
 
 export const createRecipe = async recipe => {
   try {
-    const response = await api.recipe('/recipes', recipe)
+    const response = await api.post('/recipes', recipe)
     return response.data
   } catch (error) {
     throw error
   }
 }
 
-export const updatePost = async (id, recipe) => {
+export const updateRecipe = async (id, recipe) => {
   try {
     const response = await api.put(`/recipes/${id}`, recipe)
     return response.data

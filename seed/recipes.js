@@ -42,8 +42,8 @@ const main = async () => {
           "Vegetarian"
         ],
         "cookingMethod": [
-          "Toast",
-          "Fry"
+          "bake",
+          "fry"
         ],
         "course": "Breakfast",
         "serving": "2",
@@ -89,7 +89,7 @@ const main = async () => {
         "difficulty": "Medium",
         "diet": [],
         "cookingMethod": [
-          "Bake"
+          "bake"
         ],
         "course": "Dinner",
         "serving": "4",
@@ -141,8 +141,9 @@ const main = async () => {
           "Vegetarian"
         ],
         "cookingMethod": [
-          "Broil",
-          "Saute"
+          "broil",
+          "saute",
+          "simmer"
         ],
         "course": "Dinner",
         "serving": "6",
@@ -189,7 +190,7 @@ const main = async () => {
         "difficulty": "Easy",
         "diet": [],
         "cookingMethod": [
-          "Saute"
+          "saute"
         ],
         "course": "Breakfast",
         "serving": "4",
@@ -235,16 +236,16 @@ const main = async () => {
         "difficulty": "Easy",
         "diet": [],
         "cookingMethod": [
-          "Bake",
-          "Broil"
+          "bake",
+          "broil"
         ],
-        "course": "Appertizer",
+        "course": "Appetizer",
         "serving": "6",
         "keyword": [
           "buffalo wings",
           "chicken wings",
           "wings",
-          "appertizer"
+          "appetizer"
         ],
         "saved": false
       },
@@ -276,7 +277,7 @@ const main = async () => {
         "cooktime": "30",
         "difficulty": "Medium",
         "diet": ["Japanese"],
-        "cookingMethod": ["Stove"],
+        "cookingMethod": ["broil", "simmer"],
         "course": "Lunch, Dinner",
         "serving": "4",
         "keyword": ["Japanese", "Lunch", "Dinner", "Soup"],
@@ -427,7 +428,7 @@ const main = async () => {
         "cooktime": "30",
         "difficulty": "Easy",
         "diet": ["Japanese"],
-        "cookingMethod": ["frying"],
+        "cookingMethod": ["fry"],
         "course": "Dinner",
         "serving": "4",
         "keyword": ["Japanese", "Dinner"],
@@ -470,8 +471,8 @@ const main = async () => {
         "cuisine": "Italian",
         "cooktime": "30",
         "difficulty": "Easy",
-        "diet": ["vegetarian"],
-        "cookingMethod": ["boiling"],
+        "diet": ["Vegetarian"],
+        "cookingMethod": ["broil", "saute"],
         "course": "Dinner",
         "serving": "4",
         "keyword": ["Italian", "Dinner"],
@@ -516,9 +517,9 @@ const main = async () => {
         ],
         "cuisine": "Italian",
         "cooktime": "75",
-        "difficulty": "Intermediate",
-        "diet": ["keto"],
-        "cookingMethod": ["baking, frying"],
+        "difficulty": "Medium",
+        "diet": ["Keto"],
+        "cookingMethod": ["bake", "fry"],
         "course": "Dinner",
         "serving": "4",
         "keyword": ["Italian", "Dinner"],
@@ -563,9 +564,9 @@ const main = async () => {
         ],
         "cuisine": "Italian",
         "cooktime": "120",
-        "difficulty": "Intermediate",
-        "diet": ["keto"],
-        "cookingMethod": ["cooking"],
+        "difficulty": "Medium",
+        "diet": ["Keto"],
+        "cookingMethod": ["saute", "simmer"],
         "course": "Dinner",
         "serving": "6",
         "keyword": ["Italian", "Dinner"],
@@ -608,8 +609,8 @@ const main = async () => {
         "cuisine": "Italian",
         "cooktime": "135",
         "difficulty": "Easy",
-        "diet": ["keto"],
-        "cookingMethod": ["cooking"],
+        "diet": ["Keto"],
+        "cookingMethod": ["saute", "broil", "simmer"],
         "course": "Dinner",
         "serving": "6",
         "keyword": ["Italian", "Dinner"],
@@ -644,8 +645,8 @@ const main = async () => {
         "cuisine": "Italian",
         "cooktime": "30",
         "difficulty": "Easy",
-        "diet": ["keto"],
-        "cookingMethod": ["baking"],
+        "diet": ["Keto"],
+        "cookingMethod": ["bake"],
         "course": "Dinner",
         "serving": "8",
         "keyword": ["Italian", "Dinner"],
@@ -690,8 +691,9 @@ const main = async () => {
         "difficulty": "Medium",
         "diet": [],
         "cookingMethod": [
-          "Fry",
-          "Boil"
+          "fry",
+          "broil",
+          "simmer"
         ],
         "course": "Dinner",
         "serving": "4",
@@ -733,10 +735,10 @@ const main = async () => {
         "cooktime": "20",
         "difficulty": "Easy",
         "diet": [
-          "vegetarian"
+          "Vegetarian"
         ],
         "cookingMethod": [
-          "Grilled"
+          "grill"
         ],
         "course": "Appetizer",
         "serving": "4",
@@ -785,7 +787,7 @@ const main = async () => {
         "cooktime": "20",
         "difficulty": "Medium",
         "diet": [
-          "Vegertaian"
+          "Vegetarian"
         ],
         "cookingMethod": [
           "fry"
@@ -883,7 +885,7 @@ const main = async () => {
           "Meat"
         ],
         "cookingMethod": [
-          "Fry"
+          "fry"
         ],
         "course": "Dinner",
         "serving": "4",
@@ -895,7 +897,7 @@ const main = async () => {
         "saved": false
       },
       {
-        "name": "Tacos Al PAstor ",
+        "name": "Tacos Al Pastor ",
         "imgURL": "https://hips.hearstapps.com/hmg-prod.s3.amazonaws.com/images/190130-tacos-al-pastor-horizontal-1-1549571422.png?crop=0.668xw:1.00xh;0.175xw,0&resize=768:*    ",
         "videoURL": "",
         "ingredients": [
@@ -952,7 +954,7 @@ const main = async () => {
           "On warmed tortillas, add pork, pineapple, onions, and cilantro. Serve with lime wedges."
         ],
         "cuisine": "Mexican",
-        "cooktime": "5H",
+        "cooktime": "300",
         "difficulty": "Hard",
         "diet": [
           "Carbs"
@@ -1009,17 +1011,17 @@ const main = async () => {
           "Bake until cheese is melty, 15 to 18 minutes.",
           "Garnish with tomatoes, avocado, onion, and cilantro."
         ],
-        "cuisine": "Mexcian",
+        "cuisine": "Mexican",
         "cooktime": "50",
         "difficulty": "Medium",
         "diet": [
           "Vegetarian"
         ],
         "cookingMethod": [
-          "heat",
+          "saute",
           "bake"
         ],
-        "course": "Diet",
+        "course": "Dinner",
         "serving": "4",
         "keyword": [
           "avocado",
@@ -1031,6 +1033,8 @@ const main = async () => {
       }
 
     ]
+  await Recipe.deleteMany()
+
   await Recipe.insertMany(recipes)
   console.log("Created recipes!")
 }
