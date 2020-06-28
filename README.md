@@ -1,11 +1,9 @@
 # Food Recipe App
-# PROJECT 3 PLANNING WORKSHEET README TEMPLATE <!-- omit in toc -->
 
 ## Overview
-(http://slow-potato.surge.sh/)
 **goodCuisine** 
 
-Good Cuisine is a food recipe website to make your life easier in the kitchen. The website offers suggestions based on time, cuisine, method of cooking & ease of cooking. 
+Good Cuisine is a food recipe website to make your life easier in the kitchen. The website offers suggestions based on time, cuisine, method of cooking & ease of cooking. slow-potato.surge.sh
 
 ### Team Members
 - [Christian](https://github.com/chris-m18)
@@ -14,8 +12,7 @@ Good Cuisine is a food recipe website to make your life easier in the kitchen. T
 - [Scott](https://github.com/kcip) (Team Lead)
 
 ### Team Expectations
->  Review and update the original Group Expectations document that you created for the Blog App Exercise and link to it here.
-Team values and expectations can be found on our project's [Group Expectation Setting Document](https://git.generalassemb.ly/sei-nyc-neptune/ux-sei-collab-p3/blob/master/group-expectations.md).
+Team values and expectations can be found on our project's [Group Expectation Setting Document](https://git.generalassemb.ly/kcip/ux-sei-collab-p3/blob/master/group-expectations.md.
 
 <br>
 
@@ -103,11 +100,10 @@ router.delete('/recipes/:id', controllers.deleteRecipe)
 | :------------: | :----------------------------------------- |
 |     React      | _Frontend to make design as close as possible to UX design._ |
 |  React Router  | _Routes routes_ |
-|    Express     | _._ |
-| Express Router | _Lorem ipsum dolor sit amet, consectetur._ |
-|    Mongoose    | _._ |
-|    Mongoose    | _._ |
-|    Mongoose    | _._ |
+|    Express     | _Handels APP endpoints._ |
+| Express Router | _Frontend routing._ |
+|    Mongoose    | _Helps connect to MongoDB._ |
+|    MongoDB    | _APP Database._ |
 
 <br>
 
