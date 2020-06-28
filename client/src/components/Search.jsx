@@ -8,8 +8,6 @@ import { faTimesCircle } from '@fortawesome/free-solid-svg-icons'
 import useInputState from './hooks/useInputState'
 import useToggle from './hooks/useToggle'
 
-
-//import SearchResults from './SearchResults'
 const Search = (props) => {
 
  const [search, updateSearch, resetSearch] = useInputState('')
