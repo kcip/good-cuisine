@@ -12,7 +12,7 @@ Good Cuisine is a food recipe website to make your life easier in the kitchen. T
 - [Scott](https://github.com/kcip) (Team Lead)
 
 ### Team Expectations
-Team values and expectations can be found on our project's [Group Expectation Setting Document](https://git.generalassemb.ly/kcip/ux-sei-collab-p3/blob/master/group-expectations.md.
+Team values and expectations can be found here: (https://git.generalassemb.ly/kcip/ux-sei-collab-p3/blob/master/group-expectations.md.
 
 <br>
 
@@ -27,7 +27,7 @@ Team values and expectations can be found on our project's [Group Expectation Se
 
 ### Goals
 
-- _CRUD,_
+- _CRUD_
 - _Make it as close as possible as the UX design._
 - _For Sprint One, try to priortize features based on SEI & UX team priority matrix._
 - _Mobile responsive._
