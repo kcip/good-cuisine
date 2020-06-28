@@ -59,7 +59,7 @@ export default class Home extends Component {
    slidesToScroll: 1,
    //autoplay: true
   }
-  //const state = this.state.recipes;
+  
   return (
    <>
     <div className="allrecipes">
