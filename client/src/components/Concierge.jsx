@@ -5,7 +5,7 @@ import quickImg from '../resources/clock.jpg'
 import easyImg from '../resources/easy.jpg'
 import americanImg from '../resources/americanfood.jpg'
 import dinnerImg from '../resources/dinner.jpeg'
-//import ConciergeList from './ConciergeList'
+
 const Concierge = (props) => {
 
  const [recipes, setRecipes] = useState([])
@@ -58,11 +58,7 @@ const Concierge = (props) => {
       <h3>American</h3>
      </div>
     </Link>
-    {/* <Link to={"/category/course/Dinner"} className="page-links">
-     <div className="concierge--cuisine quick-link" style={{ backgroundImage: `url(${dinnerImg})` }}>
-      Dinner
-         </div>
-    </Link> */}
+    
    </div>
 
    <div className="filterRecipes--text">
@@ -75,7 +71,7 @@ const Concierge = (props) => {
       <h3>Time</h3>
      </Link>
     </div>
-    {/* <div className="quick-link">Cooking Method</div> */}
+   
     <div className="quick-link">
      <Link to={"/category/healthy"}>
       <h3>Healthy</h3>
@@ -101,8 +97,6 @@ const Concierge = (props) => {
       <h3>Course</h3>
      </Link>
     </div>
-
-
 
    </div>
 
