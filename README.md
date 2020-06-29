@@ -3,7 +3,7 @@
 ## Overview
 **goodCuisine** 
 
-Good Cuisine is a food recipe website to make your life easier in the kitchen. The website offers suggestions based on time, cuisine, method of cooking & ease of cooking. (slow-potato.surge.sh)
+Good Cuisine is a food recipe website to make your life easier in the kitchen. The website offers suggestions based on time, cuisine, method of cooking & ease of cooking. (http://slow-potato.surge.sh)
 
 ### Team Members
 - [Christian](https://github.com/chris-m18)
